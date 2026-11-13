@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fd56ffd80d32069ab5e4928c2e4a0bf6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+<title>UiTM Shah Alam | Optimized Shuttle Route</title>
+<style>.leaflet-container { background: #e3eee7; }</style>
+</head>
+<body>
+    
+    
+    <div style="position: fixed; bottom: 20px; left: 20px; z-index: 9999;
+                background-color: white; padding: 12px 16px; border: 2px solid grey;
+                border-radius: 8px; font-size: 13px; font-family: Arial;">
+        <b>UiTM Shah Alam - Optimized Shuttle Bus Route (ACO)</b><br>
+        Total Stops: 18<br>
+        Best Total Distance: 13.70 km<br>
+        <span style="color:red;">&#9679;</span> Start/End Stop &nbsp;
+        <span style="color:blue;">&#9679;</span> Other Stops
+    </div>
+    
+    
+            <div class="folium-map" id="map_fd56ffd80d32069ab5e4928c2e4a0bf6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fd56ffd80d32069ab5e4928c2e4a0bf6 = L.map(
+                "map_fd56ffd80d32069ab5e4928c2e4a0bf6",
+                {
+                    center: [3.067329411111111, 101.49674717222223],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            
+        
+    
+            var marker_1d1b5cd5a41ac77dcec7721ce914bf1e = L.marker(
+                [3.0659921, 101.4963026],
+                {
+}
+            ).addTo(map_fd56ffd80d32069ab5e4928c2e4a0bf6);
+        
+    
+            var icon_bbb033907f7bbd696bcede0c09185dca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "play",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3143f2665e549fb9ac3ead4861b62aac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1485989137ddf746f9ca9be022ef88f0 = $(`<div id="html_1485989137ddf746f9ca9be022ef88f0" style="width: 100.0%; height: 100.0%;">START/END: Padang Kawad</div>`)[0];
+                popup_3143f2665e549fb9ac3ead4861b62aac.setContent(html_1485989137ddf746f9ca9be022ef88f0);
+            
+        
+
+        marker_1d1b5cd5a41ac77dcec7721ce914bf1e.bindPopup(popup_3143f2665e549fb9ac3ead4861b62aac)
+        ;
+
+        
+    
+    
+            marker_1d1b5cd5a41ac77dcec7721ce914bf1e.bindTooltip(
+                `<div>
+                     1. Padang Kawad (Start/End)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1d1b5cd5a41ac77dcec7721ce914bf1e.setIcon(icon_bbb033907f7bbd696bcede0c09185dca);
+            
+    
+            var marker_04875d7b4308a6aea0ba1823b2d9bbdf = L.marker(
+                [3.0657784, 101.5004532],
+                {
+}
+            ).addTo(map_fd56ffd80d32069ab5e4928c2e4a0bf6);
+        
+    
+            var icon_6dc8e30dd258679b444e33d7580c42e4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d46e185a0a88a89b7afcab725e131854 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6f52c5895acbcda5c247d909408fb14 = $(`<div id="html_c6f52c5895acbcda5c247d909408fb14" style="width: 100.0%; height: 100.0%;">Stop 2: Hentian Perindu</div>`)[0];
+                popup_d46e185a0a88a89b7afcab725e131854.setContent(html_c6f52c5895acbcda5c247d909408fb14);
+            
+        
+
+        marker_04875d7b4308a6aea0ba1823b2d9bbdf.bindPopup(popup_d46e185a0a88a89b7afcab725e131854)
+        ;
+
+        
+    
+    
+            marker_04875d7b4308a6aea0ba1823b2d9bbdf.bindTooltip(
+                `<div>
+                     2. Hentian Perindu
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_04875d7b4308a6aea0ba1823b2d9bbdf.setIcon(icon_6dc8e30dd258679b444e33d7580c42e4);
+            
+    
+            var marker_be25f812555adf2b8190e2d34802fc47 = L.marker(
+                [3.0646418, 101.5040713],
+                {
+}
+            ).addTo(map_fd56ffd80d32069ab5e4928c2e4a0bf6);
+        
+    
+            var icon_961710ea99a08bce695583926c53e42e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9c4c041a066f8d2f29e9f422c6fca3e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7301e40d567905516965c4cf801c0ab4 = $(`<div id="html_7301e40d567905516965c4cf801c0ab4" style="width: 100.0%; height: 100.0%;">Stop 3: Hentian FKPM (Mascom)</div>`)[0];
+                popup_9c4c041a066f8d2f29e9f422c6fca3e5.setContent(html_7301e40d567905516965c4cf801c0ab4);
+            
+        
+
+        marker_be25f812555adf2b8190e2d34802fc47.bindPopup(popup_9c4c041a066f8d2f29e9f422c6fca3e5)
+        ;
+
+        
+    
+    
+            marker_be25f812555adf2b8190e2d34802fc47.bindTooltip(
+                `<div>
+                     3. Hentian FKPM (Mascom)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_be25f812555adf2b8190e2d34802fc47.setIcon(icon_961710ea99a08bce695583926c53e42e);
+            
+    
+            var marker_676e4e9407dc3f48b3218e23a50d7a3f = L.marker(
+                [3.0641326, 101.5055981],
+                {
+}
+            ).addTo(map_fd56ffd80d32069ab5e4928c2e4a0bf6);
+        
+    
+            var icon_06cc5afb811f42033dac4ae1feca6a3a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_67c88bb5ddfb3337f5c9c6f28d7f568f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5639ce6af6cdc3ad860b478a1b0a5503 = $(`<div id="html_5639ce6af6cdc3ad860b478a1b0a5503" style="width: 100.0%; height: 100.0%;">Stop 4: Hentian Budi Siswa</div>`)[0];
+                popup_67c88bb5ddfb3337f5c9c6f28d7f568f.setContent(html_5639ce6af6cdc3ad860b478a1b0a5503);
+            
+        
+
+        marker_676e4e9407dc3f48b3218e23a50d7a3f.bindPopup(popup_67c88bb5ddfb3337f5c9c6f28d7f568f)
+        ;
+
+        
+    
+    
+            marker_676e4e9407dc3f48b3218e23a50d7a3f.bindTooltip(
+                `<div>
+                     4. Hentian Budi Siswa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_676e4e9407dc3f48b3218e23a50d7a3f.setIcon(icon_06cc5afb811f42033dac4ae1feca6a3a);
+            
+    
+            var marker_c837bac756ca4e95cf3221b7321cd3e9 = L.marker(
+                [3.0690626, 101.5059034],
+                {
+}
+            ).addTo(map_fd56ffd80d32069ab5e4928c2e4a0bf6);
+        
+    
+            var icon_533c764b09a14ec1a841de408b5f5854 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6042af50018b8500df18f1811088fddf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23ada34a5994e9f89df3fb45a50d0dfb = $(`<div id="html_23ada34a5994e9f89df3fb45a50d0dfb" style="width: 100.0%; height: 100.0%;">Stop 5: Hentian Seroja</div>`)[0];
+                popup_6042af50018b8500df18f1811088fddf.setContent(html_23ada34a5994e9f89df3fb45a50d0dfb);
+            
+        
+
+        marker_c837bac756ca4e95cf3221b7321cd3e9.bindPopup(popup_6042af50018b8500df18f1811088fddf)
+        ;
+
+        
+    
+    
+            marker_c837bac756ca4e95cf3221b7321cd3e9.bindTooltip(
+                `<div>
+                     5. Hentian Seroja
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c837bac756ca4e95cf3221b7321cd3e9.setIcon(icon_533c764b09a14ec1a841de408b5f5854);
+            
+    
+            var marker_d84d58015fe6f684465084065139cd00 = L.marker(
+                [3.071829, 101.507558],
+                {
+}
+            ).addTo(map_fd56ffd80d32069ab5e4928c2e4a0bf6);
+        
+    
+            var icon_5b42a165af788d6631a018dba99c1a57 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c19832fdd1d528a58087183cb40e87e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b83f88a32cc925d58885612b8c471bf8 = $(`<div id="html_b83f88a32cc925d58885612b8c471bf8" style="width: 100.0%; height: 100.0%;">Stop 6: Hentian Bas Seksyen 2</div>`)[0];
+                popup_c19832fdd1d528a58087183cb40e87e5.setContent(html_b83f88a32cc925d58885612b8c471bf8);
+            
+        
+
+        marker_d84d58015fe6f684465084065139cd00.bindPopup(popup_c19832fdd1d528a58087183cb40e87e5)
+        ;
+
+        
+    
+    
+            marker_d84d58015fe6f684465084065139cd00.bindTooltip(
+                `<div>
+                     6. Hentian Bas Seksyen 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d84d58015fe6f684465084065139cd00.setIcon(icon_5b42a165af788d6631a018dba99c1a57);
+            
+    
+            var marker_ba9715cdf6dc2c3b3f03a17c4deb7c0e = L.marker(
+                [3.076518, 101.51612],
+                {
+}
+            ).addTo(map_fd56ffd80d32069ab5e4928c2e4a0bf6);
+        
+    
+            var icon_6f8c67cc3213bb2b45e1f03960ca9790 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bbcba30b7eb9d0a9d1f31b2641e3ea58 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_700bd6d462293965e02bc3dcc99cebe0 = $(`<div id="html_700bd6d462293965e02bc3dcc99cebe0" style="width: 100.0%; height: 100.0%;">Stop 7: Hentian Tasik</div>`)[0];
+                popup_bbcba30b7eb9d0a9d1f31b2641e3ea58.setContent(html_700bd6d462293965e02bc3dcc99cebe0);
+            
+        
+
+        marker_ba9715cdf6dc2c3b3f03a17c4deb7c0e.bindPopup(popup_bbcba30b7eb9d0a9d1f31b2641e3ea58)
+        ;
+
+        
+    
+    
+            marker_ba9715cdf6dc2c3b3f03a17c4deb7c0e.bindTooltip(
+                `<div>
+                     7. Hentian Tasik
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ba9715cdf6dc2c3b3f03a17c4deb7c0e.setIcon(icon_6f8c67cc3213bb2b45e1f03960ca9790);
+            
+    
+            var marker_b7984e531d4fc345c358977b21bb1ab7 = L.marker(
+                [3.0740927, 101.5005492],
+                {
+}
+            ).addTo(map_fd56ffd80d32069ab5e4928c2e4a0bf6);
+        
+    
+            var icon_d1fe51736a89102a29b7484f4e763cbf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2c79da44ddec1fee015a4019d6e63d58 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_47254d92a3296c244127915aa5492ec5 = $(`<div id="html_47254d92a3296c244127915aa5492ec5" style="width: 100.0%; height: 100.0%;">Stop 8: Hentian Pangsapuri Baiduri</div>`)[0];
+                popup_2c79da44ddec1fee015a4019d6e63d58.setContent(html_47254d92a3296c244127915aa5492ec5);
+            
+        
+
+        marker_b7984e531d4fc345c358977b21bb1ab7.bindPopup(popup_2c79da44ddec1fee015a4019d6e63d58)
+        ;
+
+        
+    
+    
+            marker_b7984e531d4fc345c358977b21bb1ab7.bindTooltip(
+                `<div>
+                     8. Hentian Pangsapuri Baiduri
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b7984e531d4fc345c358977b21bb1ab7.setIcon(icon_d1fe51736a89102a29b7484f4e763cbf);
+            
+    
+            var marker_b69e9f5988a6099ddbd9fe80db85250a = L.marker(
+                [3.0713203, 101.5003948],
+                {
+}
+            ).addTo(map_fd56ffd80d32069ab5e4928c2e4a0bf6);
+        
+    
+            var icon_e2faceca7766e03a188c11a430d2021d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eb3a351cccd9d7c444d4e4a0bf9255d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_213c026cdac4fb4e17cb1a8b08e7750c = $(`<div id="html_213c026cdac4fb4e17cb1a8b08e7750c" style="width: 100.0%; height: 100.0%;">Stop 9: Hentian FSKM</div>`)[0];
+                popup_eb3a351cccd9d7c444d4e4a0bf9255d4.setContent(html_213c026cdac4fb4e17cb1a8b08e7750c);
+            
+        
+
+        marker_b69e9f5988a6099ddbd9fe80db85250a.bindPopup(popup_eb3a351cccd9d7c444d4e4a0bf9255d4)
+        ;
+
+        
+    
+    
+            marker_b69e9f5988a6099ddbd9fe80db85250a.bindTooltip(
+                `<div>
+                     9. Hentian FSKM
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b69e9f5988a6099ddbd9fe80db85250a.setIcon(icon_e2faceca7766e03a188c11a430d2021d);
+            
+    
+            var marker_7f47cc6a88e1453cdb14252f8ec2d745 = L.marker(
+                [3.0694225, 101.4958046],
+                {
+}
+            ).addTo(map_fd56ffd80d32069ab5e4928c2e4a0bf6);
+        
+    
+            var icon_a2cf0ae799df4bca58e0e31e3dcfd672 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_10a8f7eea84078556552e1a76dc097c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9b28daee9d4a6dacedf03ee7500eca8b = $(`<div id="html_9b28daee9d4a6dacedf03ee7500eca8b" style="width: 100.0%; height: 100.0%;">Stop 10: Hentian Mawar (DC)</div>`)[0];
+                popup_10a8f7eea84078556552e1a76dc097c3.setContent(html_9b28daee9d4a6dacedf03ee7500eca8b);
+            
+        
+
+        marker_7f47cc6a88e1453cdb14252f8ec2d745.bindPopup(popup_10a8f7eea84078556552e1a76dc097c3)
+        ;
+
+        
+    
+    
+            marker_7f47cc6a88e1453cdb14252f8ec2d745.bindTooltip(
+                `<div>
+                     10. Hentian Mawar (DC)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7f47cc6a88e1453cdb14252f8ec2d745.setIcon(icon_a2cf0ae799df4bca58e0e31e3dcfd672);
+            
+    
+            var marker_c314b192dbe368c218fcf3e8eda18e2b = L.marker(
+                [3.0683474, 101.4935831],
+                {
+}
+            ).addTo(map_fd56ffd80d32069ab5e4928c2e4a0bf6);
+        
+    
+            var icon_96b2a4e7cf8d145e13e5f6a9d67ddaac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3acbaf001f9ff1136ed138c27b21600f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_29d2bfffdd88313d02b094ae54be3ac5 = $(`<div id="html_29d2bfffdd88313d02b094ae54be3ac5" style="width: 100.0%; height: 100.0%;">Stop 11: Hentian Pusat Kesihatan</div>`)[0];
+                popup_3acbaf001f9ff1136ed138c27b21600f.setContent(html_29d2bfffdd88313d02b094ae54be3ac5);
+            
+        
+
+        marker_c314b192dbe368c218fcf3e8eda18e2b.bindPopup(popup_3acbaf001f9ff1136ed138c27b21600f)
+        ;
+
+        
+    
+    
+            marker_c314b192dbe368c218fcf3e8eda18e2b.bindTooltip(
+                `<div>
+                     11. Hentian Pusat Kesihatan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c314b192dbe368c218fcf3e8eda18e2b.setIcon(icon_96b2a4e7cf8d145e13e5f6a9d67ddaac);
+            
+    
+            var marker_b4804fb938a623fd02d899d1edcc8001 = L.marker(
+                [3.0665363, 101.4933403],
+                {
+}
+            ).addTo(map_fd56ffd80d32069ab5e4928c2e4a0bf6);
+        
+    
+            var icon_643c4d97e7bc0246e5cc100ef4fd86a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7bcf4a2fb3c43956145e98fca2d910c6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ca6679bfd0cd8179824a9111cfa0644 = $(`<div id="html_2ca6679bfd0cd8179824a9111cfa0644" style="width: 100.0%; height: 100.0%;">Stop 12: Hentian Anggerik</div>`)[0];
+                popup_7bcf4a2fb3c43956145e98fca2d910c6.setContent(html_2ca6679bfd0cd8179824a9111cfa0644);
+            
+        
+
+        marker_b4804fb938a623fd02d899d1edcc8001.bindPopup(popup_7bcf4a2fb3c43956145e98fca2d910c6)
+        ;
+
+        
+    
+    
+            marker_b4804fb938a623fd02d899d1edcc8001.bindTooltip(
+                `<div>
+                     12. Hentian Anggerik
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b4804fb938a623fd02d899d1edcc8001.setIcon(icon_643c4d97e7bc0246e5cc100ef4fd86a5);
+            
+    
+            var marker_5fbdec6b6c5696e191c6b7b040712435 = L.marker(
+                [3.0649942, 101.4899131],
+                {
+}
+            ).addTo(map_fd56ffd80d32069ab5e4928c2e4a0bf6);
+        
+    
+            var icon_c2ae73fd98b0523d1f088f2a567e76fc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0c441917d55d72b350cc6575e73888dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fae318da2820e8f432a711c2d0f7a90d = $(`<div id="html_fae318da2820e8f432a711c2d0f7a90d" style="width: 100.0%; height: 100.0%;">Stop 13: Hentian Pusat Komersial Sek. 7</div>`)[0];
+                popup_0c441917d55d72b350cc6575e73888dc.setContent(html_fae318da2820e8f432a711c2d0f7a90d);
+            
+        
+
+        marker_5fbdec6b6c5696e191c6b7b040712435.bindPopup(popup_0c441917d55d72b350cc6575e73888dc)
+        ;
+
+        
+    
+    
+            marker_5fbdec6b6c5696e191c6b7b040712435.bindTooltip(
+                `<div>
+                     13. Hentian Pusat Komersial Sek. 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5fbdec6b6c5696e191c6b7b040712435.setIcon(icon_c2ae73fd98b0523d1f088f2a567e76fc);
+            
+    
+            var marker_c0297cfa18926a4ccb413f161126bd19 = L.marker(
+                [3.0705072, 101.4841999],
+                {
+}
+            ).addTo(map_fd56ffd80d32069ab5e4928c2e4a0bf6);
+        
+    
+            var icon_f0498199e647a5b3cca11db215f68319 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7ec731fabbf63be112cda4f49a1edfd0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3309b9bad06afed04d1e61620b50a0f2 = $(`<div id="html_3309b9bad06afed04d1e61620b50a0f2" style="width: 100.0%; height: 100.0%;">Stop 14: Hentian Flat PKNS</div>`)[0];
+                popup_7ec731fabbf63be112cda4f49a1edfd0.setContent(html_3309b9bad06afed04d1e61620b50a0f2);
+            
+        
+
+        marker_c0297cfa18926a4ccb413f161126bd19.bindPopup(popup_7ec731fabbf63be112cda4f49a1edfd0)
+        ;
+
+        
+    
+    
+            marker_c0297cfa18926a4ccb413f161126bd19.bindTooltip(
+                `<div>
+                     14. Hentian Flat PKNS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c0297cfa18926a4ccb413f161126bd19.setIcon(icon_f0498199e647a5b3cca11db215f68319);
+            
+    
+            var marker_597fc30a1a6cf6f9c44ee7b5650819ac = L.marker(
+                [3.0712195, 101.48143],
+                {
+}
+            ).addTo(map_fd56ffd80d32069ab5e4928c2e4a0bf6);
+        
+    
+            var icon_e88f0acef2081e0648cb1f4c1a5a8a70 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5e922aecae533cb8f6171b3f1a3bf0fc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_686ff2c04f83fce007edd99d6ac24199 = $(`<div id="html_686ff2c04f83fce007edd99d6ac24199" style="width: 100.0%; height: 100.0%;">Stop 15: Hentian Masjid Jalan Kristal</div>`)[0];
+                popup_5e922aecae533cb8f6171b3f1a3bf0fc.setContent(html_686ff2c04f83fce007edd99d6ac24199);
+            
+        
+
+        marker_597fc30a1a6cf6f9c44ee7b5650819ac.bindPopup(popup_5e922aecae533cb8f6171b3f1a3bf0fc)
+        ;
+
+        
+    
+    
+            marker_597fc30a1a6cf6f9c44ee7b5650819ac.bindTooltip(
+                `<div>
+                     15. Hentian Masjid Jalan Kristal
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_597fc30a1a6cf6f9c44ee7b5650819ac.setIcon(icon_e88f0acef2081e0648cb1f4c1a5a8a70);
+            
+    
+            var marker_ea37dd8398af59ef0a48ac99d5f803fe = L.marker(
+                [3.065903, 101.4815564],
+                {
+}
+            ).addTo(map_fd56ffd80d32069ab5e4928c2e4a0bf6);
+        
+    
+            var icon_9cab96d68075105aaed3d70c4d4587ff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fcfc2f7011a5aaaf6ca0ee045f47c436 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_790fb0a1ea6f9893a27976d1e35c7a0e = $(`<div id="html_790fb0a1ea6f9893a27976d1e35c7a0e" style="width: 100.0%; height: 100.0%;">Stop 16: I-Soho@I-City</div>`)[0];
+                popup_fcfc2f7011a5aaaf6ca0ee045f47c436.setContent(html_790fb0a1ea6f9893a27976d1e35c7a0e);
+            
+        
+
+        marker_ea37dd8398af59ef0a48ac99d5f803fe.bindPopup(popup_fcfc2f7011a5aaaf6ca0ee045f47c436)
+        ;
+
+        
+    
+    
+            marker_ea37dd8398af59ef0a48ac99d5f803fe.bindTooltip(
+                `<div>
+                     16. I-Soho@I-City
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ea37dd8398af59ef0a48ac99d5f803fe.setIcon(icon_9cab96d68075105aaed3d70c4d4587ff);
+            
+    
+            var marker_4d3f990057fb4966bfcfc98095676413 = L.marker(
+                [3.06519, 101.4832411],
+                {
+}
+            ).addTo(map_fd56ffd80d32069ab5e4928c2e4a0bf6);
+        
+    
+            var icon_98e6140f7e256e5d564f330523b27936 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e441ebb915a6a784ece56e9453e6367d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7462683666c1e571c09be86db4cd9c03 = $(`<div id="html_7462683666c1e571c09be86db4cd9c03" style="width: 100.0%; height: 100.0%;">Stop 17: Hentian I-City</div>`)[0];
+                popup_e441ebb915a6a784ece56e9453e6367d.setContent(html_7462683666c1e571c09be86db4cd9c03);
+            
+        
+
+        marker_4d3f990057fb4966bfcfc98095676413.bindPopup(popup_e441ebb915a6a784ece56e9453e6367d)
+        ;
+
+        
+    
+    
+            marker_4d3f990057fb4966bfcfc98095676413.bindTooltip(
+                `<div>
+                     17. Hentian I-City
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4d3f990057fb4966bfcfc98095676413.setIcon(icon_98e6140f7e256e5d564f330523b27936);
+            
+    
+            var marker_6116709414af596d2b975cf5591ff52c = L.marker(
+                [3.0464418, 101.50143],
+                {
+}
+            ).addTo(map_fd56ffd80d32069ab5e4928c2e4a0bf6);
+        
+    
+            var icon_847e183d8e6815d0630dc4ffe4d44ed9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_325d74cdd94a8788103f868370944e6a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_885046834f6dde9eec0e49284e87736f = $(`<div id="html_885046834f6dde9eec0e49284e87736f" style="width: 100.0%; height: 100.0%;">Stop 18: Intec Sek 17</div>`)[0];
+                popup_325d74cdd94a8788103f868370944e6a.setContent(html_885046834f6dde9eec0e49284e87736f);
+            
+        
+
+        marker_6116709414af596d2b975cf5591ff52c.bindPopup(popup_325d74cdd94a8788103f868370944e6a)
+        ;
+
+        
+    
+    
+            marker_6116709414af596d2b975cf5591ff52c.bindTooltip(
+                `<div>
+                     18. Intec Sek 17
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6116709414af596d2b975cf5591ff52c.setIcon(icon_847e183d8e6815d0630dc4ffe4d44ed9);
+            
+    
+            var poly_line_147800530c91bcb81a31bfbb181a19e3 = L.polyline(
+                [[3.0659921, 101.4963026], [3.0657784, 101.5004532], [3.0646418, 101.5040713], [3.0641326, 101.5055981], [3.0690626, 101.5059034], [3.071829, 101.507558], [3.076518, 101.51612], [3.0740927, 101.5005492], [3.0713203, 101.5003948], [3.0694225, 101.4958046], [3.0683474, 101.4935831], [3.0665363, 101.4933403], [3.0649942, 101.4899131], [3.0705072, 101.4841999], [3.0712195, 101.48143], [3.065903, 101.4815564], [3.06519, 101.4832411], [3.0464418, 101.50143], [3.0659921, 101.4963026]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_fd56ffd80d32069ab5e4928c2e4a0bf6);
+        
+    
+            poly_line_147800530c91bcb81a31bfbb181a19e3.bindTooltip(
+                `<div>
+                     Optimized ACO Route - Total Distance: 13.70 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+map_fd56ffd80d32069ab5e4928c2e4a0bf6.fitBounds(
+  poly_line_147800530c91bcb81a31bfbb181a19e3.getBounds(),
+  { paddingTopLeft: [48, 48], paddingBottomRight: [48, 100] }
+);
+</script>
+</html>

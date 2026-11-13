@@ -1,0 +1,156 @@
+/* Added structure and depth, using the existing scrapbook palette. */
+html {
+  scroll-padding-top: 150px;
+}
+nav {
+  flex-wrap: wrap;
+  padding-block: 12px;
+  gap: 8px 20px;
+}
+.links {
+  gap: 14px;
+  min-width: 0;
+  flex: 1;
+  justify-content: flex-end;
+}
+.links a {
+  font-size: 12px;
+  white-space: nowrap;
+}
+.view-controls {
+  display: flex;
+}
+.view-controls .btn {
+  padding: 6px 10px;
+  font-size: 11px;
+}
+.toolkit-grid,
+.activity-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+.activity-grid [hidden] {
+  display: none;
+}
+.toolkit-grid .entry,
+.activity-grid .entry,
+.academic-timeline .entry {
+  padding: 24px;
+}
+.academic-timeline {
+  display: grid;
+  gap: 20px;
+  border-left: 2px dashed #b5bfa1;
+  padding-left: 24px;
+  margin-left: 10px;
+}
+.academic-timeline .entry {
+  position: relative;
+}
+.academic-timeline .entry::before {
+  position: absolute;
+  left: -32px;
+  top: 27px;
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #824357;
+  border: 3px solid #f8f2e8;
+}
+#education h2,
+#skills h2,
+#experience h2,
+#activities h2,
+#certifications h2 {
+  color: #71313d;
+}
+.entry h3 {
+  margin: 8px 0 12px;
+  line-height: 1.25;
+}
+.entry p:last-child {
+  margin-bottom: 0;
+}
+.activity-toggle {
+  margin-top: 20px;
+}
+#experience {
+  scroll-margin-top: 0;
+}
+.depth-surface {
+  position: relative;
+  transform: perspective(1100px) rotateX(var(--tilt-x, 0deg))
+    rotateY(var(--tilt-y, 0deg));
+  transition: transform 180ms ease-out, box-shadow 180ms ease-out;
+  box-shadow: 0 4px 0 #d9c5b8, 0 10px 18px #55353113;
+}
+.depth-surface.is-tilting {
+  z-index: 2;
+  box-shadow: 0 5px 0 #d2b6a6, 0 22px 30px #55353125;
+}
+.depth-photo {
+  transform: perspective(1100px) rotateX(var(--tilt-x, 0deg))
+    rotateY(var(--tilt-y, 0deg)) rotate(var(--photo-angle));
+  transition: transform 180ms ease-out, box-shadow 180ms ease-out;
+}
+.main-photo.depth-photo {
+  --photo-angle: -9deg;
+}
+.second-photo.depth-photo {
+  --photo-angle: 9deg;
+}
+.depth-photo.is-tilting {
+  box-shadow: 10px 20px 32px #55353140;
+}
+.depth-off .depth-surface {
+  transform: none;
+}
+.depth-off .depth-photo {
+  transform: rotate(var(--photo-angle));
+}
+.reveal-ready {
+  opacity: 0;
+  translate: 0 18px;
+  transition: opacity 450ms ease-out, translate 450ms ease-out;
+}
+.reveal-ready.revealed {
+  opacity: 1;
+  translate: 0 0;
+}
+@media (max-width: 1150px) {
+  nav .links {
+    order: 3;
+    flex-basis: 100%;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-block: 8px;
+  }
+  .view-controls {
+    margin-left: auto;
+  }
+}
+@media (max-width: 720px) {
+  .toolkit-grid,
+  .activity-grid {
+    grid-template-columns: 1fr;
+  }
+  .academic-timeline {
+    padding-left: 18px;
+  }
+  .academic-timeline .entry::before {
+    left: -26px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .depth-surface,
+  .depth-photo {
+    transition: none;
+  }
+  .reveal-ready {
+    opacity: 1;
+    translate: none;
+    transition: none;
+  }
+}

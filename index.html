@@ -1,0 +1,3600 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <meta
+    name="description"
+    content="Fatin Sofea — Intelligent System Engineering student exploring AI, machine learning and software development."
+  >
+
+  <title>Fatin Sofea | Portfolio</title>
+
+  <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="enhancements.css">
+  <link rel="stylesheet" href="personalisation.css">
+
+  <script src="theme.js"></script>
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <header>
+    <nav aria-label="Main navigation">
+      <a class="brand" href="#home">
+        <span class="brand-icon">FS</span>
+        <span>Fatin <b>Sofea</b></span>
+      </a>
+
+      <div class="links">
+        <a href="#home" aria-current="location">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#activities">Activities</a>
+
+        <a
+          href="#contact"
+          class="nav-icon"
+          aria-label="Contact"
+          title="Contact"
+        >
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <rect
+              x="3"
+              y="5"
+              width="18"
+              height="14"
+              rx="3"
+            ></rect>
+
+            <path d="m3 7 9 6 9-6"></path>
+          </svg>
+        </a>
+      </div>
+
+      <div class="view-controls">
+        <button
+          class="btn theme-icon-button"
+          id="theme-toggle"
+          type="button"
+          aria-label="Switch to dark mode"
+          title="Switch to dark mode"
+        >
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <g class="moon-icon">
+              <path
+                d="M20.5 13A8.5 8.5 0 0 1 11 3.5 8.5 8.5 0 1 0 20.5 13Z"
+              ></path>
+            </g>
+
+            <g class="sun-icon">
+              <circle cx="12" cy="12" r="4"></circle>
+
+              <path
+                d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"
+              ></path>
+            </g>
+          </svg>
+        </button>
+      </div>
+      <button
+  class="mobile-menu-toggle"
+  id="mobile-menu-toggle"
+  type="button"
+  aria-label="Open navigation menu"
+  aria-controls="mobile-sidebar"
+  aria-expanded="false"
+>
+  <svg
+    width="21"
+    height="21"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.8"
+    stroke-linecap="round"
+    aria-hidden="true"
+  >
+    <path d="M4 6h16M4 12h16M4 18h16"></path>
+  </svg>
+</button>
+    </nav>
+  </header>
+  <dialog
+  id="mobile-sidebar"
+  class="mobile-sidebar"
+  aria-labelledby="mobile-menu-title"
+>
+  <div class="sidebar-toolbar">
+    <span class="sidebar-menu-tag">PORTFOLIO / MENU</span>
+
+    <button
+      class="mobile-menu-close"
+      type="button"
+      aria-label="Close navigation menu"
+      autofocus
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="m6 6 12 12M18 6 6 18"/>
+      </svg>
+    </button>
+  </div>
+
+  <div class="sidebar-profile">
+    <div class="sidebar-monogram" aria-hidden="true">
+      <span>FS</span>
+    </div>
+
+    <div class="sidebar-profile-copy">
+      <h2 id="mobile-menu-title">Fatin Sofea</h2>
+      <p>Learning. Building. Growing.</p>
+    </div>
+  </div>
+
+  <nav class="mobile-sidebar-links" aria-label="Mobile navigation">
+    <a href="#home" aria-current="location">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="m3 10 9-7 9 7M5 9v12h5v-7h4v7h5V9"/>
+      </svg>
+      <span class="sidebar-number">01</span>
+      <span class="sidebar-label">Home</span>
+      <span class="sidebar-arrow" aria-hidden="true">›</span>
+    </a>
+
+    <a href="#about">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="7" r="4"/>
+        <path d="M4 21v-2a8 8 0 0 1 16 0v2Z"/>
+      </svg>
+      <span class="sidebar-number">02</span>
+      <span class="sidebar-label">About</span>
+      <span class="sidebar-arrow" aria-hidden="true">›</span>
+    </a>
+
+    <a href="#education">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="m2 8 10-5 10 5-10 5ZM6 10v6c4 3 8 3 12 0v-6M22 8v8"/>
+      </svg>
+      <span class="sidebar-number">03</span>
+      <span class="sidebar-label">Education</span>
+      <span class="sidebar-arrow" aria-hidden="true">›</span>
+    </a>
+
+    <a href="#skills">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="m8 5-6 7 6 7m8-14 6 7-6 7M14 3l-4 18"/>
+      </svg>
+      <span class="sidebar-number">04</span>
+      <span class="sidebar-label">Skills</span>
+      <span class="sidebar-arrow" aria-hidden="true">›</span>
+    </a>
+
+    <a href="#work">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M3 7V5a2 2 0 0 1 2-2h5l2 3h7a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/>
+      </svg>
+      <span class="sidebar-number">05</span>
+      <span class="sidebar-label">Projects</span>
+      <span class="sidebar-arrow" aria-hidden="true">›</span>
+    </a>
+
+    <a href="#experience">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="3" y="7" width="18" height="14" rx="2"/>
+        <path d="M8 7V4h8v3M3 12c6 4 12 4 18 0M10 13h4v4h-4Z"/>
+      </svg>
+      <span class="sidebar-number">06</span>
+      <span class="sidebar-label">Experience</span>
+      <span class="sidebar-arrow" aria-hidden="true">›</span>
+    </a>
+
+    <a href="#activities">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="3" y="5" width="18" height="16" rx="2"/>
+        <path d="M7 3v4m10-4v4M3 10h18M7 14h2m3 0h2m3 0h1M7 17h2m3 0h2"/>
+      </svg>
+      <span class="sidebar-number">07</span>
+      <span class="sidebar-label">Activities</span>
+      <span class="sidebar-arrow" aria-hidden="true">›</span>
+    </a>
+
+    <a href="#contact">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="3" y="5" width="18" height="14" rx="2"/>
+        <path d="m3 7 9 6 9-6"/>
+      </svg>
+      <span class="sidebar-number">08</span>
+      <span class="sidebar-label">Contact</span>
+      <span class="sidebar-arrow" aria-hidden="true">›</span>
+    </a>
+  </nav>
+
+  <div class="sidebar-availability">
+    <p>
+      <span class="sidebar-status-dot" aria-hidden="true"></span>
+      Available for internship
+    </p>
+    <span>Let’s build something meaningful.</span>
+
+    <svg class="sidebar-leaf" viewBox="0 0 60 90" aria-hidden="true">
+      <path d="M30 85Q24 45 42 8"/>
+      <path d="M29 65Q7 58 9 40Q29 43 29 65Z"/>
+      <path d="M30 48Q51 44 54 26Q33 28 30 48Z"/>
+      <path d="M35 31Q20 22 25 8Q39 15 35 31Z"/>
+    </svg>
+  </div>
+
+  <div class="sidebar-footer">
+    <span class="sidebar-footer-mark" aria-hidden="true">FS</span>
+    <p>Fatin Sofea <span>/ Portfolio</span></p>
+  </div>
+</dialog>
+
+  <main class="wrap">
+    <!-- HOME -->
+    <section id="home" class="hero scrapbook">
+      <div class="hero-stage">
+        <div class="scrap-collage">
+          <figure class="scrap-photo main-photo">
+            <img
+            src="images/sofea-raya.jpeg"
+            width="720"
+            height="960"
+            alt="Fatin Sofea memakai pakaian raya"
+            >
+
+            <figcaption>01 / MEET SOFEA</figcaption>
+          </figure>
+
+          <figure class="scrap-photo second-photo">
+            <img
+              src="images/sofea-seaside.webp"
+              width="320"
+              height="423"
+              alt="Fatin Sofea outdoors in a navy hijab"
+            >
+
+            <figcaption>UiTM · MALAYSIA</figcaption>
+          </figure>
+
+          <span class="scrap-stamp" aria-hidden="true">✦</span>
+
+          <a class="scrap-note" href="#work">
+            OPEN PROJECT FILES
+            <span aria-hidden="true">→</span>
+          </a>
+
+          <span class="photo-tape" aria-hidden="true"></span>
+
+          <div class="journal-ticket" aria-hidden="true">
+            <span>FIELD NOTES</span>
+            <strong>Ideas in<br>progress</strong>
+            <span>UiTM KEDAH / 01</span>
+          </div>
+
+          <span class="journal-scribble" aria-hidden="true">✳</span>
+        </div>
+
+        <div class="hero-copy">
+          <div class="status">
+            <span class="dot"></span>
+            Available for internship opportunities
+          </div>
+
+        <h1 class="hero-quote">
+           <span>Exploring technology.</span>
+           <span>Bringing ideas to <em>life.</em></span>
+        </h1>
+
+<p class="intro">
+  Hi, I’m <strong>Nurfatin Sofea binti Juanda Ruha</strong>,
+  an Intelligent System Engineering student at UiTM.
+  I enjoy exploring technology, learning new things and
+  putting ideas into practice. Through coursework and
+  hands-on projects, I’m building my knowledge and discovering
+  new ways to solve everyday problems.
+</p>
+
+          <p class="exploring-line">
+            Currently exploring
+            <strong id="typing-text" aria-hidden="true">
+              machine learning
+            </strong>
+            <span class="typing-cursor" aria-hidden="true">|</span>
+
+            <span class="sr-only">
+              machine learning, natural language processing,
+              data analytics and web development.
+            </span>
+          </p>
+
+          <div class="actions">
+            <a class="btn primary" href="#work">
+              Explore my projects →
+            </a>
+
+            <a
+              class="btn"
+              href="documents/Fatin_Sofea_Resume.pdf"
+              download
+            >
+              Download resume ↓
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+<style>
+  #about {
+    --about-header: var(--homepage-header-height, 64px);
+    --rose-ink: #461a26;
+    --rose-accent: #780e28;
+    --rose-paper: #fff3e3;
+    --rose-paper-ink: #780e28;
+    --rose-tape: #7a2138;
+    --rose-sheet: #edb9b6;
+    --rose-glow: #fce1d6;
+    --rose-shade: #ce8993;
+    scroll-margin-top: calc(var(--about-header) + 12px);
+  }
+
+  html[data-theme="dark"] #about {
+    --rose-ink: #f7e8ec;
+    --rose-accent: #f5bcc9;
+    --rose-paper: #eed9c7;
+    --rose-paper-ink: #5f1a2b;
+    --rose-tape: #a84f66;
+    --rose-sheet: #482b39;
+    --rose-glow: #654052;
+    --rose-shade: #321d29;
+  }
+
+  /* Heading */
+  #about .about-heading {
+    margin: 0 auto clamp(28px, 3.5vw, 52px);
+    padding-inline: 12px;
+    text-align: center;
+  }
+
+  #about .about-heading-label {
+    margin: 0 0 16px;
+    color: var(--rose-accent);
+    font: 700 clamp(12px, 1.2vw, 18px) / 1.4 Georgia, serif;
+    letter-spacing: 0.22em;
+  }
+
+  #about .about-heading h2 {
+    margin: 0;
+    color: var(--rose-ink);
+    font: 700 clamp(32px, 5.5vw, 90px) / 1.1 Georgia, serif;
+    letter-spacing: -0.045em;
+  }
+
+  #about .about-heading em {
+    position: relative;
+    display: inline-block;
+    color: var(--rose-accent);
+  }
+
+  #about .about-heading em::after {
+    content: "";
+    position: absolute;
+    left: 3%;
+    bottom: -0.15em;
+    width: 82%;
+    height: 0.13em;
+    border-top: 0.035em solid currentColor;
+    border-radius: 50%;
+    transform: rotate(-3deg);
+    pointer-events: none;
+  }
+
+  #about .about-heading-intro {
+    max-width: 68ch;
+    margin: clamp(18px, 2.2vw, 32px) auto 0;
+    color: var(--rose-ink);
+    font: italic clamp(15px, 1.6vw, 24px) / 1.55 "DM Sans", sans-serif;
+  }
+
+  /* Scrapbook */
+  #about > .about-rose {
+    position: relative;
+    isolation: isolate;
+    display: grid;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.5fr);
+    align-items: center;
+    gap: clamp(24px, 4vw, 60px);
+    padding: clamp(36px, 4vw, 64px);
+    color: var(--rose-ink);
+  }
+
+  #about > .about-rose::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23grain)' opacity='.16'/%3E%3C/svg%3E"),
+      radial-gradient(ellipse at 20% 15%, var(--rose-glow), transparent 65%),
+      radial-gradient(ellipse at 94% 95%, var(--rose-shade), transparent 68%),
+      var(--rose-sheet);
+    clip-path: polygon(
+      0.5% 2%, 5% 1%, 10% 1.8%, 16% 0.7%, 22% 1.4%,
+      28% 0.6%, 35% 1.4%, 42% 0.5%, 49% 1.2%, 56% 0.5%,
+      63% 1.2%, 70% 0.7%, 77% 1.5%, 84% 0.6%, 91% 1.4%,
+      99% 0.8%, 99.5% 16%, 99% 32%, 99.6% 50%, 99% 68%,
+      99.5% 84%, 98.8% 97.6%, 93% 98.7%, 86% 98.1%,
+      79% 99.2%, 72% 98.5%, 65% 99.5%, 58% 98.7%,
+      51% 99.5%, 44% 98.7%, 37% 99.3%, 30% 98.6%,
+      23% 99.4%, 16% 98.6%, 9% 99.1%, 1% 97.7%,
+      0.5% 83%, 1% 67%, 0.4% 51%, 0.9% 34%, 0.3% 18%
+    );
+    pointer-events: none;
+  }
+
+  #about > .about-rose::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    width: min(22%, 230px);
+    height: 18px;
+    background: conic-gradient(
+      var(--rose-tape) 25%, transparent 0 50%,
+      var(--rose-tape) 0 75%, transparent 0
+    ) 0 0 / 18px 18px;
+    opacity: 0.8;
+    pointer-events: none;
+  }
+
+  /* Polaroid */
+  #about .about-rose-collage {
+    position: relative;
+    isolation: isolate;
+    justify-self: center;
+    width: min(92%, 410px);
+    perspective: 900px;
+  }
+
+  #about .about-rose-collage::before,
+  #about .about-rose-collage::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 5% 7% -3% -4%;
+    border-radius: 3px;
+    box-shadow: 2px 7px 14px #461a2626;
+    pointer-events: none;
+  }
+
+  #about .about-rose-collage::before {
+    background: #f1dcc1;
+    transform: translate(-9px, 5px) rotate(-10deg);
+  }
+
+  #about .about-rose-collage::after {
+    background:
+      linear-gradient(#a44e5e38 1px, transparent 1px) 0 0 / 13px 13px,
+      linear-gradient(90deg, #a44e5e38 1px, transparent 1px) 0 0 / 13px 13px,
+      #f8ded5;
+    transform: rotate(2deg);
+  }
+
+  #about .about-rose-photo {
+    position: relative;
+    margin: 0;
+    padding: clamp(9px, 1.1vw, 16px);
+    border-radius: 4px;
+    background: var(--rose-paper);
+    box-shadow: 5px 12px 24px #461a263d;
+    transform: rotate(-5deg);
+  }
+
+  #about .about-rose-photo::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -12px;
+    left: 28%;
+    width: 45%;
+    height: clamp(24px, 3vw, 42px);
+    background: repeating-linear-gradient(
+      42deg, transparent 0 6px, #fff2 6px 8px
+    ), var(--rose-tape);
+    clip-path: polygon(0 6%, 100% 0, 97% 34%, 100% 66%, 98% 100%, 2% 94%);
+    transform: rotate(-5deg);
+    pointer-events: none;
+  }
+
+  #about .about-rose-photo-button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    cursor: zoom-in;
+  }
+
+  #about .about-rose-photo-button img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 4.5;
+    object-fit: cover;
+  }
+
+  #about .about-rose-photo-button.is-lifting img {
+    transform: scale(1.06);
+  }
+
+  #about .about-rose-photo figcaption {
+    margin-top: 10px;
+    padding-bottom: 4px;
+    color: var(--rose-paper-ink);
+    text-align: center;
+    font: italic clamp(15px, 1.5vw, 24px) / 1.3 Georgia, serif;
+  }
+
+  #about .about-rose-flower {
+    position: absolute;
+    right: -4%;
+    bottom: -3%;
+    width: 24%;
+    height: auto;
+    filter: drop-shadow(2px 4px 3px #461a2633);
+    pointer-events: none;
+  }
+
+  /* Bio dan quote */
+  #about .about-rose-story {
+    min-width: 0;
+  }
+
+  #about .about-rose-story > p {
+    max-width: 70ch;
+    margin: 0 0 14px;
+    font: 400 clamp(16px, 1.3vw, 21px) / 1.52 "DM Sans", sans-serif;
+  }
+
+  #about .about-rose-story strong {
+    font-weight: 700;
+  }
+
+  #about .about-rose-quote {
+    position: relative;
+    isolation: isolate;
+    margin: 22px 0 0;
+    padding: 16px 20px;
+    border: 0;
+    background: transparent;
+    color: var(--rose-paper-ink);
+    font: italic clamp(18px, 1.75vw, 28px) / 1.35 Georgia, serif;
+    filter: drop-shadow(2px 5px 4px #461a2626);
+  }
+
+  #about .about-rose-quote::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: var(--rose-paper);
+    clip-path: polygon(
+      0 7%, 12% 4%, 24% 6%, 38% 2%, 51% 4%, 64% 1%, 78% 3%,
+      100% 0, 99% 94%, 88% 98%, 73% 96%, 60% 100%, 43% 96%,
+      30% 98%, 18% 96%, 0 100%
+    );
+    pointer-events: none;
+  }
+
+  #about .about-rose-quote::after {
+    content: none;
+  }
+
+  /* Heading dan scrapbook fade in secara berasingan */
+  @media (prefers-reduced-motion: no-preference) {
+    #about > .about-reveal-pending {
+      opacity: 0;
+    }
+
+    #about > .about-reveal-pending:focus-within {
+      opacity: 1;
+    }
+
+    #about > .about-revealed {
+      animation: about-fade-in 550ms ease-out backwards;
+    }
+
+    #about .about-rose-photo-button img {
+      transition: transform 220ms ease;
+    }
+
+    @keyframes about-fade-in {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+
+  @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+    #about .about-rose-photo {
+      transition: transform 220ms ease, box-shadow 220ms ease;
+    }
+
+    #about .about-rose-photo:hover {
+      transform: translateY(-5px) rotate(-3deg);
+      box-shadow: 8px 18px 30px #461a264d;
+    }
+
+    #about .about-rose-quote {
+      transition: transform 220ms ease, filter 220ms ease;
+    }
+
+    #about .about-rose-quote:hover {
+      transform: translateY(-6px) rotate(-1deg);
+      filter: drop-shadow(3px 10px 6px #461a2640);
+    }
+  }
+
+  /* Dialog gambar */
+  #about-photo-dialog {
+    box-sizing: border-box;
+    position: fixed;
+    inset: 0;
+    width: max-content;
+    max-width: 94vw;
+    max-height: 94dvh;
+    margin: auto;
+    padding: 12px;
+    overflow: auto;
+    border: 0;
+    border-radius: 12px;
+    background: #fff3e3;
+    color: #780e28;
+    box-shadow: 0 20px 60px #0006;
+  }
+
+  #about-photo-dialog:not([open]) {
+    display: none;
+  }
+
+  #about-photo-dialog::backdrop {
+    background: #231018d9;
+  }
+
+  #about-photo-dialog form {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0 8px;
+  }
+
+  #about-photo-dialog button {
+    padding: 7px 12px;
+    border: 1px solid currentColor;
+    border-radius: 999px;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+  }
+
+  #about-photo-dialog img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: min(calc(94vw - 24px), 900px);
+    max-height: 76dvh;
+    object-fit: contain;
+  }
+
+  @media (max-width: 800px) {
+    #about > .about-rose {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 32px;
+      padding: 42px 24px 28px;
+    }
+
+    #about .about-rose-collage {
+      width: min(76%, 270px);
+    }
+
+    #about .about-rose-story > p {
+      font-size: 16px;
+    }
+  }
+</style>
+
+<section id="about" class="section" aria-labelledby="about-title">
+  <div class="about-heading">
+    <p class="about-heading-label">01 / A LITTLE ABOUT ME</p>
+    <h2 id="about-title">Growing through <em>curiosity</em>.</h2>
+
+    <p class="about-heading-intro">
+      A little about what I’m learning, what I enjoy building,
+      and what keeps me curious.
+    </p>
+  </div>
+
+  <div class="about-rose">
+    <div class="about-rose-collage">
+      <figure class="about-rose-photo">
+        <button
+          id="about-photo-open"
+          class="about-rose-photo-button"
+          type="button"
+          aria-haspopup="dialog"
+          aria-controls="about-photo-dialog"
+          aria-label="Open full photo of Fatin Sofea"
+        >
+          <img
+            src="images/sofea-garden.webp"
+            alt="Fatin Sofea standing in a garden"
+            loading="lazy"
+          >
+        </button>
+
+        <figcaption>UiTM Kedah · Malaysia</figcaption>
+      </figure>
+
+      <svg class="about-rose-flower" viewBox="0 0 90 130" aria-hidden="true">
+        <path
+          d="M28 126Q56 83 51 38M46 92Q58 72 74 68M49 77Q38 67 29 65"
+          fill="none"
+          stroke="#886840"
+          stroke-width="2.5"
+          stroke-linecap="round"
+        />
+        <path
+          d="M48 85Q54 68 71 68Q63 82 48 85M48 78Q31 78 27 63Q42 63 48 78"
+          fill="#a7895e"
+        />
+        <g fill="#a44e5e">
+          <ellipse cx="51" cy="21" rx="10" ry="15" />
+          <ellipse cx="66" cy="32" rx="14" ry="10" transform="rotate(-20 66 32)" />
+          <ellipse cx="60" cy="47" rx="10" ry="14" transform="rotate(-30 60 47)" />
+          <ellipse cx="42" cy="47" rx="10" ry="14" transform="rotate(30 42 47)" />
+          <ellipse cx="36" cy="32" rx="14" ry="10" transform="rotate(20 36 32)" />
+        </g>
+        <circle cx="51" cy="36" r="7" fill="#dfb578" />
+      </svg>
+    </div>
+
+    <div class="about-rose-story">
+      <p>
+        I’m currently pursuing a
+        <strong>Bachelor of Information Systems (Hons.) in Intelligent System Engineering</strong>
+        at <strong>UiTM Kedah</strong>, where I explore how technology can solve
+        everyday problems.
+      </p>
+
+      <p>
+        I’m particularly interested in AI, machine learning, data analytics
+        and software development. I enjoy discovering how things work,
+        exploring new ideas and turning what I learn into something practical.
+      </p>
+
+      <p>
+        Through my studies and IT internship, I’ve had the chance to analyse
+        data, experiment with machine learning models, develop web applications
+        and build IoT prototypes. For me, the most rewarding moment is seeing
+        an idea come to life after the effort of figuring it out.
+      </p>
+
+      <blockquote class="about-rose-quote">
+        “Striving for success without hard work is like trying to harvest
+        where you haven’t planted.”
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<dialog id="about-photo-dialog" aria-label="Full photo of Fatin Sofea">
+  <form method="dialog">
+    <button type="submit" autofocus>Close ✕</button>
+  </form>
+
+  <img id="about-photo-full" alt="Fatin Sofea standing in a garden">
+</dialog>
+
+<script>
+  {
+    const aboutSection = document.getElementById("about");
+    const siteHeader = document.querySelector("body > header");
+    const openButton = document.getElementById("about-photo-open");
+    const previewPhoto = openButton.querySelector("img");
+    const photoDialog = document.getElementById("about-photo-dialog");
+    const fullPhoto = document.getElementById("about-photo-full");
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let opening = false;
+
+    if (siteHeader) {
+      function updateHeaderHeight() {
+        const height = Math.ceil(siteHeader.getBoundingClientRect().height);
+        aboutSection.style.setProperty("--about-header", `${height}px`);
+      }
+
+      updateHeaderHeight();
+
+      if ("ResizeObserver" in window) {
+        new ResizeObserver(updateHeaderHeight).observe(siteHeader);
+      }
+    }
+
+    // Observe each block so the heading never triggers the scrapbook.
+    if (!reducedMotion.matches && "IntersectionObserver" in window) {
+      const revealItems = aboutSection.querySelectorAll(
+        ":scope > .about-heading, :scope > .about-rose"
+      );
+
+      const aboutObserver = new IntersectionObserver((entries) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue;
+
+          entry.target.classList.replace(
+            "about-reveal-pending",
+            "about-revealed"
+          );
+          aboutObserver.unobserve(entry.target);
+        }
+      }, {
+        threshold: 0,
+        rootMargin: "0px 0px -96px 0px"
+      });
+
+      for (const item of revealItems) {
+        item.classList.add("about-reveal-pending");
+        aboutObserver.observe(item);
+      }
+
+      reducedMotion.addEventListener("change", () => {
+        if (!reducedMotion.matches) return;
+
+        aboutObserver.disconnect();
+
+        for (const item of revealItems) {
+          item.classList.remove("about-reveal-pending", "about-revealed");
+        }
+      });
+    }
+
+    openButton.addEventListener("click", () => {
+      if (opening || photoDialog.open) return;
+
+      opening = true;
+      fullPhoto.src = previewPhoto.currentSrc || previewPhoto.src;
+
+      function showPhoto() {
+        openButton.classList.remove("is-lifting");
+        opening = false;
+        photoDialog.showModal();
+      }
+
+      if (reducedMotion.matches) {
+        showPhoto();
+        return;
+      }
+
+      openButton.classList.add("is-lifting");
+      window.setTimeout(showPhoto, 220);
+    });
+
+    photoDialog.addEventListener("click", (event) => {
+      if (event.target !== photoDialog) return;
+
+      const bounds = photoDialog.getBoundingClientRect();
+      const clickedOutside =
+        event.clientX < bounds.left ||
+        event.clientX > bounds.right ||
+        event.clientY < bounds.top ||
+        event.clientY > bounds.bottom;
+
+      if (clickedOutside) photoDialog.close();
+    });
+
+    photoDialog.addEventListener("close", () => {
+      openButton.focus({ preventScroll: true });
+    });
+  }
+</script>
+
+    <!-- EDUCATION -->
+<section id="education" class="section edu-scrapbook" aria-labelledby="education-title">
+  <svg class="edu-symbols" width="0" height="0" aria-hidden="true">
+    <symbol id="edu-school" viewBox="0 0 24 24">
+      <path d="m2 9 10-4 10 4-10 4L2 9Z M6 11v5c3 3 9 3 12 0v-5 M22 9v6"/>
+    </symbol>
+
+    <symbol id="edu-calendar" viewBox="0 0 24 24">
+      <rect x="3" y="5" width="18" height="16" rx="2"/>
+      <path d="M7 3v4 M17 3v4 M3 10h18 M8 14h1 M12 14h1 M16 14h1"/>
+    </symbol>
+
+    <symbol id="edu-award" viewBox="0 0 24 24">
+      <circle cx="12" cy="9" r="5"/>
+      <path d="m9 13-3 8 4-2 2 2 2-2 4 2-3-8"/>
+    </symbol>
+
+    <symbol id="edu-learning" viewBox="0 0 24 24">
+      <path d="m3 8 9-4 9 4-9 4-9-4Z M3 12l9 4 9-4 M3 16l9 4 9-4"/>
+    </symbol>
+
+    <symbol id="edu-sprig" viewBox="0 0 40 52">
+      <path d="M4 49C16 37 20 22 27 9 M11 41Q10 31 6 28 M16 35Q24 27 32 28 M20 26Q18 18 14 15 M24 17Q31 15 34 10 M10 43Q20 39 26 42"/>
+      <circle cx="27" cy="7" r="2"/>
+      <circle cx="6" cy="26" r="2"/>
+      <circle cx="34" cy="28" r="2"/>
+      <circle cx="13" cy="13" r="2"/>
+      <circle cx="35" cy="8" r="2"/>
+      <circle cx="28" cy="42" r="2"/>
+    </symbol>
+  </svg>
+
+  <div class="edu-heading">
+    <p class="edu-kicker">02 / EDUCATION</p>
+    <h2 id="education-title">My academic <em>journey.</em></h2>
+    <p class="edu-intro">
+      A glimpse into my studies and the moments that turned my curiosity
+      about technology into a passion for building with it.
+    </p>
+  </div>
+
+  <div class="edu-cards">
+    <article class="edu-card">
+      <svg class="edu-flower" aria-hidden="true">
+        <use href="#edu-sprig"/>
+      </svg>
+
+      <div class="edu-copy">
+        <span class="edu-label">CURRENT STUDIES · CDCS259</span>
+        <h3>
+          Bachelor of Information Systems (Hons.)
+          <span class="edu-programme">Intelligent System Engineering</span>
+        </h3>
+
+        <ul class="edu-details">
+          <li>
+            <svg class="edu-icon" aria-hidden="true"><use href="#edu-school"/></svg>
+            <span>Universiti Teknologi MARA, Kedah Branch</span>
+          </li>
+          <li>
+            <svg class="edu-icon" aria-hidden="true"><use href="#edu-calendar"/></svg>
+            <span>Apr 2025 – Oct 2027 (Expected)</span>
+          </li>
+          <li>
+            <svg class="edu-icon" aria-hidden="true"><use href="#edu-award"/></svg>
+            <span>CGPA 3.65 · Dean’s List</span>
+          </li>
+          <li>
+            <svg class="edu-icon" aria-hidden="true"><use href="#edu-learning"/></svg>
+            <span>Exploring AI, machine learning and data analytics through practical projects.</span>
+          </li>
+        </ul>
+      </div>
+
+      <figure class="edu-photo">
+        <img src="images/uitm-kedah.jpg" alt="UiTM Kedah campus" loading="lazy">
+      </figure>
+    </article>
+
+    <article class="edu-card">
+      <svg class="edu-flower" aria-hidden="true">
+        <use href="#edu-sprig"/>
+      </svg>
+
+      <div class="edu-copy">
+        <span class="edu-label">DIPLOMA</span>
+        <h3>Diploma in Computer Science</h3>
+
+        <ul class="edu-details">
+          <li>
+            <svg class="edu-icon" aria-hidden="true"><use href="#edu-school"/></svg>
+            <span>Universiti Teknologi MARA, Machang, Kelantan</span>
+          </li>
+          <li>
+            <svg class="edu-icon" aria-hidden="true"><use href="#edu-calendar"/></svg>
+            <span>Oct 2022 – Aug 2025 · Graduated Nov 2025</span>
+          </li>
+          <li>
+            <svg class="edu-icon" aria-hidden="true"><use href="#edu-award"/></svg>
+            <span>CGPA 3.60 · Dean’s List</span>
+          </li>
+          <li>
+            <svg class="edu-icon" aria-hidden="true"><use href="#edu-learning"/></svg>
+            <span>Built a foundation in programming, databases and application development.</span>
+          </li>
+        </ul>
+      </div>
+
+      <figure class="edu-photo">
+        <img src="images/sofea-convo.jpg" alt="Fatin Sofea at her diploma convocation" loading="lazy">
+      </figure>
+    </article>
+
+    <article class="edu-card">
+      <svg class="edu-flower" aria-hidden="true">
+        <use href="#edu-sprig"/>
+      </svg>
+
+      <div class="edu-copy">
+        <span class="edu-label">SECONDARY EDUCATION</span>
+        <h3>Sijil Pelajaran Malaysia (SPM)</h3>
+
+        <ul class="edu-details">
+          <li>
+            <svg class="edu-icon" aria-hidden="true"><use href="#edu-school"/></svg>
+            <span>SMK Kubang Bemban, Pasir Mas, Kelantan</span>
+          </li>
+          <li>
+            <svg class="edu-icon" aria-hidden="true"><use href="#edu-calendar"/></svg>
+            <span>Completed in 2021</span>
+          </li>
+          <li>
+            <svg class="edu-icon" aria-hidden="true"><use href="#edu-learning"/></svg>
+            <span>Completed my secondary education before continuing my studies in Computer Science.</span>
+          </li>
+        </ul>
+      </div>
+
+    <figure class="edu-photo">
+  <img
+    src="images/smk kubang bemban.jpg"
+    alt="SMK Kubang Bemban"
+    loading="lazy"
+  >
+</figure>
+</article>
+  </div>
+</section>
+
+   <!-- SKILLS -->
+<section id="skills" class="section" aria-labelledby="skills-title">
+  <div class="section-head">
+    <div class="eyebrow">03 / SKILLS</div>
+    <h2 id="skills-title">Inside my <em>toolkit.</em></h2>
+    <p>
+      The tools I use to build applications, explore data and turn ideas
+      into working prototypes.
+    </p>
+  </div>
+
+  <div class="toolkit-grid">
+    <article class="entry">
+      <h3>Programming &amp; Databases</h3>
+
+      <h4>Skills</h4>
+      <div class="skills">
+        <span>Python</span>
+        <span>Java</span>
+        <span>C++</span>
+        <span>PHP</span>
+        <span>SQL</span>
+        <span>C# (Basics)</span>
+        <span>Object-Oriented Programming</span>
+        <span>Database Management</span>
+      </div>
+
+      <h4>Tools</h4>
+      <div class="skills">
+        <span>MySQL</span>
+        <span>SQLite</span>
+        <span>MongoDB</span>
+        <span>phpMyAdmin</span>
+        <span>MySQL Workbench</span>
+      </div>
+    </article>
+
+    <article class="entry">
+      <h3>AI &amp; Data Analytics</h3>
+
+      <h4>Skills</h4>
+      <div class="skills">
+        <span>R</span>
+        <span>Machine Learning Fundamentals</span>
+        <span>Natural Language Processing (NLP)</span>
+        <span>Sentiment Analysis</span>
+        <span>Text Preprocessing</span>
+        <span>TF-IDF</span>
+        <span>SMOTE</span>
+        <span>Model Evaluation</span>
+      </div>
+
+      <h4>Tools</h4>
+      <div class="skills">
+        <span>Google Colab</span>
+        <span>Altair AI Studio (RapidMiner)</span>
+      </div>
+    </article>
+
+    <article class="entry">
+      <h3>Web, Mobile &amp; UI/UX</h3>
+
+      <h4>Skills</h4>
+      <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Web Development</span>
+        <span>Mobile App Development</span>
+        <span>UI/UX Design</span>
+      </div>
+
+      <h4>Tools</h4>
+      <div class="skills">
+        <span>VS Code</span>
+        <span>Android Studio</span>
+        <span>Git</span>
+        <span>GitHub</span>
+        <span>Firebase</span>
+        <span>Figma</span>
+      </div>
+
+      <details class="skill-more">
+        <summary>More tools</summary>
+        <div class="skills">
+          <span>Visual Studio</span>
+          <span>Bootstrap</span>
+          <span>Streamlit</span>
+          <span>XAMPP</span>
+          <span>WampServer</span>
+          <span>Ubuntu</span>
+        </div>
+      </details>
+    </article>
+
+    <article class="entry">
+      <h3>IoT &amp; Hardware</h3>
+
+      <h4>Skills</h4>
+      <div class="skills">
+        <span>IoT Prototyping</span>
+        <span>Environmental Sensors</span>
+      </div>
+
+      <h4>Tools</h4>
+      <div class="skills">
+        <span>ESP8266 NodeMCU</span>
+        <span>Arduino IDE</span>
+        <span>Blynk IoT</span>
+      </div>
+    </article>
+  </div>
+</section>
+<!-- PROJECTS -->
+<section id="work" class="section project-files" aria-labelledby="projects-title">
+<div class="section-head files-heading">
+  <div>
+    <div class="eyebrow">04 / PROJECTS</div>
+
+<h2 id="projects-title">From idea to <em>prototype</em>.</h2>
+</div>
+
+  <p>What I’ve built to make sense of data and solve everyday problems.</p>
+</div>
+
+  <div class="filters" role="group" aria-label="Filter projects">
+    <button class="filter active" type="button" data-filter="all" aria-pressed="true">
+      All projects
+    </button>
+    <button class="filter" type="button" data-filter="ai" aria-pressed="false">
+      AI / ML
+    </button>
+    <button class="filter" type="button" data-filter="web" aria-pressed="false">
+      Web
+    </button>
+    <button class="filter" type="button" data-filter="data" aria-pressed="false">
+      Data Analytics
+    </button>
+    <button class="filter" type="button" data-filter="iot" aria-pressed="false">
+      IoT
+    </button>
+  </div>
+
+  <div class="projects" id="project-grid">
+    <!-- 01 / SCAM SMS DETECTION -->
+    <article class="project featured" data-category="ai web">
+      <div class="demo project-demo">
+        <div class="demo-top">
+          <span><i aria-hidden="true"></i> FEATURED · FINAL YEAR PROJECT</span>
+          <span>IN DEVELOPMENT</span>
+        </div>
+
+        <div class="demo-body">
+          <div class="eyebrow">INTERACTIVE DEMO</div>
+          <h2>Would you trust this text?</h2>
+          <p>Pick a sample, then reveal the clues.</p>
+
+          <div class="demo-options" role="group" aria-label="Choose an example message">
+            <button type="button" data-example="reward" aria-pressed="true">
+              Reward
+            </button>
+            <button type="button" data-example="delivery" aria-pressed="false">
+              Delivery
+            </button>
+            <button type="button" data-example="reminder" aria-pressed="false">
+              Reminder
+            </button>
+          </div>
+
+          <div class="demo-message" id="demo-message">
+            You’ve won a cash reward! Claim it today by entering your banking details.
+          </div>
+
+          <button class="btn demo-reveal" type="button">
+            Reveal clues <span aria-hidden="true">→</span>
+          </button>
+
+          <div class="demo-feedback" role="status"></div>
+        </div>
+
+      </div>
+
+      <div class="project-body">
+        <div class="eyebrow project-label">FINAL YEAR PROJECT · NLP</div>
+
+        <div class="project-meta">
+          <h3>Scam SMS Detection</h3>
+        </div>
+
+        <p>
+          My ongoing final year project uses NLP and machine learning to
+          distinguish scam and legitimate SMS in English and Bahasa Melayu.
+        </p>
+
+        <div class="tags">
+          <span>Python</span>
+          <span>NLP</span>
+          <span>TF-IDF</span>
+          <span>Machine Learning</span>
+        </div>
+
+        <div class="card-actions">
+          <button class="btn detail-button" type="button" data-dialog="project-1"
+                  aria-label="Open case file for Scam SMS Detection">
+            Open case file →
+          </button>
+        </div>
+      </div>
+<dialog id="project-1" class="sms-case" aria-labelledby="title-1">
+  <div class="sms-case-top">
+    <span class="sms-case-tab">CASE FILE / 01</span>
+
+    <form method="dialog">
+      <button class="btn close sms-case-close" type="submit"
+              aria-label="Close case file" autofocus>×</button>
+    </form>
+  </div>
+
+  <div class="sms-case-heading">
+    <h3 id="title-1">Read Between <em>the Texts</em></h3>
+    <span class="sms-case-label">Bilingual SMS Analysis</span>
+  </div>
+
+  <div class="sms-case-grid">
+    <ol class="sms-case-steps" role="list">
+      <li>
+        <span class="sms-case-number" aria-hidden="true">01</span>
+        <div>
+          <h4>The problem</h4>
+          <p>
+            Scam texts can imitate familiar services to make a request sound
+            genuine. I built this project to help readers spot suspicious SMS
+            in English and Bahasa Melayu.
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <span class="sms-case-number" aria-hidden="true">02</span>
+        <div>
+          <h4>How it works</h4>
+          <p>
+            The system cleans the message and uses TF-IDF to give more weight
+            to terms that help distinguish it from other messages. A support
+            vector machine (SVM) then classifies the SMS.
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <span class="sms-case-number" aria-hidden="true">03</span>
+        <div>
+          <h4>What users see</h4>
+          <p>
+            The interface shows a scam or legitimate label, a confidence score
+            and highlighted words that help explain the prediction.
+          </p>
+        </div>
+      </li>
+    </ol>
+
+<figure class="sms-case-preview">
+  <div class="sms-case-phone">
+    <div class="sms-phone-status" aria-hidden="true">
+      <span>10:24</span>
+      <span class="sms-phone-battery"></span>
+    </div>
+
+    <div class="sms-phone-header">
+      <strong>SMS Preview</strong>
+      <span>Unknown sender</span>
+    </div>
+
+    <span class="sms-phone-time">Today, 10:24 AM</span>
+
+    <p class="sms-case-bubble">
+      Claim your <mark>cash reward</mark> today.
+    </p>
+
+    <span class="sms-case-result">
+      <span aria-hidden="true">⚠</span> Potential scam
+    </span>
+
+    <div class="sms-phone-reason">
+      <strong>Why it was flagged</strong>
+      <p>Unexpected cash reward.</p>
+    </div>
+  </div>
+
+</figure>
+  </div>
+</dialog>
+    </article>
+
+    <!-- 02 / KIDTRACE AI -->
+   <article class="project" data-category="ai web">
+  <div class="case-visual trace" aria-hidden="true">
+    <figure class="kidtrace-card-map">
+      <figcaption class="case-caption">CASE 02 / SEARCH WORKFLOW</figcaption>
+
+      <svg viewBox="0 0 600 180" preserveAspectRatio="xMidYMid slice"
+           focusable="false">
+        <defs>
+          <linearGradient id="kidtrace-card-land" x2="100%" y2="100%">
+            <stop stop-color="#e1e4cb" />
+            <stop offset="1" stop-color="#cbd4b3" />
+          </linearGradient>
+
+          <g id="kidtrace-card-pin">
+            <path d="M0 0C-4-5-13-15-13-23a13 13 0 0 1 26 0C13-15 4-5 0 0Z"
+                  fill="#465b35" stroke="#fff9e9" stroke-width="4" />
+            <circle cy="-23" r="4.5" fill="#fff9e9" />
+          </g>
+        </defs>
+
+        <rect width="600" height="180" fill="url(#kidtrace-card-land)" />
+
+        <!-- Kawasan hijau -->
+        <g fill="#aab88b" opacity=".5">
+          <path d="M0 104l38 7 30 34-9 35H0z" />
+          <path d="M80 0h70l-34 42-40-13z" />
+          <path d="m264 150 40-17 34 28-13 19h-63z" />
+          <path d="m478 33 55-23 27 27-33 26z" />
+          <path d="m379 54 41 14 14 35-35 21-32-20z" />
+        </g>
+
+        <!-- Jalan kecil -->
+        <g fill="none" stroke="#eff0dd" stroke-width="2.5" opacity=".85">
+          <path d="M0 43l95 22 78-13 76 39 83 4 68-43 105-9 95 14" />
+          <path d="M16 0l39 87 7 93M126 0l-14 77-42 103M207 0l-41 72 2 108" />
+          <path d="M271 0l-24 39-35 12m30 34-16 53 16 42M345 0l-28 64 15 31-4 85" />
+          <path d="M402 0l17 68 47 20 21 65M502 0l-5 77 53 30M565 0l-31 50 66 32" />
+          <path d="M0 121l80-22 67 24 87 15 85-20 70 17 74-21 137-13" />
+        </g>
+
+        <!-- Sungai -->
+        <path d="M372 199c49-42 79-46 123-53 49-8 73-32 124-50"
+              fill="none" stroke="#a4c1b2" stroke-width="27" />
+
+        <!-- Jalan utama -->
+        <g fill="none" stroke="#f7f4e3" stroke-width="6">
+          <path d="M-15 58C70 63 84 124 135 190M24 184 88 110 116 25 150-8" />
+          <path d="M141-12l83 83 63 29 67 86M101 182l55-68 68-43 58-79" />
+          <path d="M236-12l72 38 87 17 63 33 46 62M410-12l-14 61-48 49-46 90" />
+          <path d="M356 192c45-35 70-51 130-62 57-11 86-38 128-53" />
+          <path d="M541-9 480 45 450 76 420 123l-15 26" />
+        </g>
+
+        <!-- Laluan dan tiga pin -->
+        <path d="M165 125C223 125 248 106 291 77S407 101 454 118"
+              fill="none" stroke="#465b35" stroke-width="3.5"
+              stroke-linecap="round" stroke-dasharray="8 7" />
+
+        <use href="#kidtrace-card-pin" x="165" y="125" />
+        <use href="#kidtrace-card-pin" x="291" y="77" />
+        <use href="#kidtrace-card-pin" x="454" y="118" />
+      </svg>
+    </figure>
+  </div>
+
+  <div class="project-body">
+    <div class="eyebrow project-label">SIME DARBY PROPERTY HACKATHON</div>
+
+    <div class="project-meta">
+      <h3>KidTrace AI</h3>
+    </div>
+
+    <p>
+      A prototype that helps security teams review candidate CCTV clips,
+      verify sightings and coordinate searches for missing children.
+    </p>
+
+    <div class="tags">
+      <span>Python</span>
+      <span>Streamlit</span>
+      <span>SQLite</span>
+      <span>Hackathon</span>
+    </div>
+
+    <div class="card-actions">
+      <a class="live" href="https://kidtrace-ai.onrender.com/"
+         target="_blank" rel="noopener">
+        Open prototype ↗
+      </a>
+
+      <button class="btn detail-button" type="button" data-dialog="project-2"
+              aria-label="Open case file for KidTrace AI">
+        Open case file →
+      </button>
+    </div>
+  </div>
+
+  <dialog id="project-2" class="sms-case" aria-labelledby="title-2">
+    <div class="sms-case-top">
+      <span class="sms-case-tab">CASE FILE / 02</span>
+
+      <form method="dialog">
+        <button class="btn close sms-case-close" type="submit"
+                aria-label="Close case file" autofocus>×</button>
+      </form>
+    </div>
+
+    <div class="sms-case-heading">
+      <h3 id="title-2">From Clues <em>to Action</em></h3>
+      <span class="sms-case-label">KidTrace AI · Hackathon Prototype</span>
+    </div>
+
+    <div class="sms-case-grid">
+      <ol class="sms-case-steps" role="list">
+        <li>
+          <span class="sms-case-number" aria-hidden="true">01</span>
+          <div>
+            <h4>Rank candidates</h4>
+            <p>
+              The prototype ranks CCTV clips using photo similarity,
+              clothing, height, time and location.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="sms-case-number" aria-hidden="true">02</span>
+          <div>
+            <h4>Verify sightings</h4>
+            <p>
+              Staff review the suggested clips and add confirmed sightings
+              to a timeline with their times and locations.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="sms-case-number" aria-hidden="true">03</span>
+          <div>
+            <h4>Coordinate the search</h4>
+            <p>
+              Staff use the movement timeline to guide officer dispatch
+              and update the case as the search progresses.
+            </p>
+          </div>
+        </li>
+      </ol>
+
+      <figure class="kidtrace-preview">
+        <div class="kidtrace-map" aria-hidden="true">
+          <svg viewBox="0 0 360 230" focusable="false">
+            <path class="map-paper"
+                  d="M12 13 120 25 240 12 348 25 348 215 240 202 120 218 12 204Z" />
+            <path class="map-fold" d="M120 25 240 12 240 202 120 218Z" />
+            <path class="map-crease" d="M120 25V218 M240 12V202" />
+
+            <g class="map-rooms">
+              <path d="M25 29 68 34 68 60 25 56Z" />
+              <path d="M77 35 111 39 111 72 77 67Z" />
+              <path d="M132 39 184 33 184 67 132 72Z" />
+              <path d="M194 32 229 28 229 64 194 68Z" />
+              <path d="M251 29 335 39 335 81 251 73Z" />
+              <path d="M26 115 103 124 103 164 26 157Z" />
+              <path d="M27 169 110 178 110 203 27 192Z" />
+              <path d="M132 148 171 144 171 195 132 201Z" />
+              <path d="M182 151 227 145 227 190 182 196Z" />
+              <path d="M250 88 334 96 334 132 250 123Z" />
+              <path d="M250 174 334 184 334 202 250 193Z" />
+            </g>
+
+            <path class="map-route map-route-one"
+                  d="M54 94H124Q143 94 151 110T181 125" />
+            <path class="map-route map-route-two"
+                  d="M181 125H225Q242 125 251 140T282 157H307" />
+
+            <g class="map-pin map-pin-one" transform="translate(54 94)">
+              <path d="M0 0C-5-8-15-16-15-25a15 15 0 1 1 30 0C15-16 5-8 0 0Z" />
+              <text x="0" y="-25">01</text>
+            </g>
+
+            <g class="map-pin map-pin-two" transform="translate(181 125)">
+              <path d="M0 0C-5-8-15-16-15-25a15 15 0 1 1 30 0C15-16 5-8 0 0Z" />
+              <text x="0" y="-25">02</text>
+            </g>
+
+            <g class="map-pin map-pin-three" transform="translate(307 157)">
+              <path d="M0 0C-5-8-15-16-15-25a15 15 0 1 1 30 0C15-16 5-8 0 0Z" />
+              <text x="0" y="-25">03</text>
+            </g>
+          </svg>
+        </div>
+
+        <figcaption>
+          <strong>Search route</strong>
+          <span>01 Entrance → 02 Central Atrium → 03 Food Court</span>
+        </figcaption>
+      </figure>
+    </div>
+  </dialog>
+</article>
+
+   <!-- 03 / EMPLOYEE MANAGEMENT SYSTEM -->
+<article class="project" data-category="web">
+  <div class="case-visual office office-workflow">
+    <span class="case-caption">CASE 03 / STAFF WORKFLOW</span>
+
+    <div class="office-workflow-sidebar" aria-hidden="true">
+      <svg viewBox="0 0 24 24">
+        <path d="m3 11 9-8 9 8M6 9v11h4v-5h4v5h4V9"/>
+      </svg>
+
+      <svg viewBox="0 0 24 24">
+        <circle cx="9" cy="7" r="3"/>
+        <path d="M3 20v-2a5 5 0 0 1 5-5h2a5 5 0 0 1 5 5v2ZM16 4a3 3 0 0 1 0 6m2 3a5 5 0 0 1 3 5v2"/>
+      </svg>
+
+      <svg viewBox="0 0 24 24">
+        <rect x="4" y="5" width="16" height="16" rx="2"/>
+        <path d="M8 3v4m8-4v4M4 10h16"/>
+      </svg>
+
+      <svg viewBox="0 0 24 24">
+        <path d="M6 3h8l4 4v14H6ZM14 3v5h4M9 12h6m-6 4h6"/>
+      </svg>
+    </div>
+
+    <div class="office-workflow-panel">
+      <div class="office-workflow-content">
+        <p class="office-workflow-title">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 3h8l4 4v14H6ZM14 3v5h4M9 12h6m-6 4h6"/>
+          </svg>
+          Emergency leave request
+        </p>
+
+        <ol class="office-workflow-steps" role="list">
+          <li>
+            <span
+              class="office-workflow-dot is-complete"
+              aria-hidden="true"
+            >✓</span>
+            <span class="office-workflow-number" aria-hidden="true">
+              01
+            </span>
+            <span>Upload supporting document</span>
+          </li>
+
+          <li>
+            <span class="office-workflow-dot" aria-hidden="true"></span>
+            <span class="office-workflow-number" aria-hidden="true">
+              02
+            </span>
+            <span>Review in admin dashboard</span>
+          </li>
+
+          <li>
+            <span class="office-workflow-dot" aria-hidden="true"></span>
+            <span class="office-workflow-number" aria-hidden="true">
+              03
+            </span>
+            <span>Update submission status</span>
+          </li>
+        </ol>
+      </div>
+
+      <div class="office-workflow-calendar" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <rect x="4" y="5" width="16" height="16" rx="2"/>
+          <path d="M8 3v4m8-4v4M4 10h16"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-body">
+    <div class="eyebrow project-label">
+      WEB DEVELOPMENT · INTERNSHIP
+    </div>
+
+    <div class="project-meta">
+      <h3>Employee Management System</h3>
+    </div>
+
+    <p>
+      A lateness and emergency leave system with staff and admin
+      dashboards, document uploads, submission tracking and
+      holiday management.
+    </p>
+
+    <div class="tags">
+      <span>PHP</span>
+      <span>SQLite</span>
+      <span>JavaScript</span>
+      <span>Bootstrap</span>
+    </div>
+
+    <div class="card-actions employee-card-actions">
+      <a
+        class="employee-prototype-link"
+        href="https://staff-reporting-system.onrender.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Open prototype <span aria-hidden="true">↗</span>
+      </a>
+
+      <button
+        class="btn detail-button"
+        type="button"
+        data-dialog="project-0"
+        aria-label="Open case file for Employee Management System"
+      >
+        Open case file →
+      </button>
+    </div>
+  </div>
+
+  <!-- PROJECT CASE FILE -->
+  <dialog
+    id="project-0"
+    class="employee-case"
+    aria-labelledby="title-0"
+  >
+    <div class="employee-case-header">
+      <span class="employee-case-clip" aria-hidden="true"></span>
+      <span class="employee-case-tab">CASE FILE / 03</span>
+
+      <form method="dialog" class="employee-case-close-form">
+        <button
+          class="btn close employee-case-close"
+          type="submit"
+          aria-label="Close case file"
+          autofocus
+        >
+          ×
+        </button>
+      </form>
+
+      <p class="employee-case-kicker">
+        Web Development · Internship
+      </p>
+
+      <span class="employee-case-label">
+        Employee Management System
+      </span>
+
+      <h3 id="title-0">From Request <em>to Review</em></h3>
+    </div>
+
+    <div class="employee-case-grid">
+      <ol class="employee-case-steps" role="list">
+        <li>
+          <span class="employee-step-number" aria-hidden="true">
+            01
+          </span>
+
+          <div>
+            <h4>Submit a request</h4>
+            <p>
+              Staff submit lateness or emergency leave requests
+              with supporting documents.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="employee-step-number" aria-hidden="true">
+            02
+          </span>
+
+          <div>
+            <h4>Review and update</h4>
+            <p>
+              Administrators review submissions, update statuses,
+              search records and manage holidays.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="employee-step-number" aria-hidden="true">
+            03
+          </span>
+
+          <div>
+            <h4>Build and refine</h4>
+            <p>
+              I built the system with PHP and SQLite, using HTML,
+              CSS, JavaScript and Bootstrap for the interface.
+              I tested and refined it based on supervisor feedback.
+            </p>
+          </div>
+        </li>
+      </ol>
+
+      <figure class="employee-case-preview">
+        <div class="employee-dashboard">
+          <div
+            class="employee-dashboard-sidebar"
+            aria-hidden="true"
+          >
+            <svg viewBox="0 0 24 24">
+              <path d="m3 11 9-8 9 8M6 9v11h4v-5h4v5h4V9"/>
+            </svg>
+
+            <svg viewBox="0 0 24 24">
+              <path d="M6 3h8l4 4v14H6ZM14 3v5h4M9 12h6m-6 4h6"/>
+            </svg>
+
+            <svg viewBox="0 0 24 24">
+              <rect x="4" y="5" width="16" height="16" rx="2"/>
+              <path d="M8 3v4m8-4v4M4 10h16"/>
+            </svg>
+
+            <svg viewBox="0 0 24 24">
+              <circle cx="9" cy="7" r="3"/>
+              <path d="M3 20v-2a5 5 0 0 1 5-5h2a5 5 0 0 1 5 5v2m2-16a3 3 0 0 1 0 6m1 3a5 5 0 0 1 3 5v2"/>
+            </svg>
+          </div>
+
+          <div class="employee-dashboard-body">
+            <div class="employee-dashboard-bar" aria-hidden="true">
+              ● ● ●
+            </div>
+
+            <div class="employee-dashboard-content">
+              <h4>Emergency leave request</h4>
+
+              <details
+                class="employee-dashboard-row"
+                name="employee-case-workflow"
+              >
+                <summary>
+                  <span class="employee-row-icon" aria-hidden="true">
+                    ▤
+                  </span>
+                  <span>Document uploaded</span>
+                </summary>
+
+                <p>
+                  Staff fill in the request and attach a supporting
+                  document before submitting it.
+                </p>
+              </details>
+
+              <details
+                class="employee-dashboard-row"
+                name="employee-case-workflow"
+              >
+                <summary>
+                  <span class="employee-row-icon" aria-hidden="true">
+                    ◎
+                  </span>
+                  <span>Admin review</span>
+                </summary>
+
+                <p>
+                  The administrator opens the submission and checks
+                  the request details and attachment.
+                </p>
+              </details>
+
+              <details
+                class="employee-dashboard-row"
+                name="employee-case-workflow"
+              >
+                <summary>
+                  <span class="employee-row-icon" aria-hidden="true">
+                    ✓
+                  </span>
+                  <span>Status updated</span>
+                </summary>
+
+                <p>
+                  After the administrator updates the status,
+                  staff can track it in their dashboard.
+                </p>
+              </details>
+            </div>
+          </div>
+        </div>
+
+        <figcaption>Select a step</figcaption>
+      </figure>
+    </div>
+  </dialog>
+</article>
+
+    <!-- 04 / TERRALUX -->
+<!-- 04 / TERRALUX -->
+<article class="project" data-category="iot">
+  <div class="case-visual plants terralux-snapshot"
+       role="img"
+       aria-label="Sample TerraLux readings: soil moisture 42 percent, temperature 28 degrees Celsius, and humidity 70 percent.">
+    <span class="case-caption">CASE 04 / SENSOR SNAPSHOT</span>
+
+    <div class="plant-readings" aria-hidden="true">
+      <div>
+        <small>
+          <svg viewBox="0 0 24 24" width="16" height="16"
+               fill="none" stroke="currentColor" focusable="false">
+            <path d="M12 2C9 7 5 11 5 15a7 7 0 0 0 14 0c0-4-4-8-7-13Z"
+                  fill="currentColor"/>
+            <path d="M8 15a4 4 0 0 0 4 4" stroke="#faf8e9"/>
+          </svg>
+          Soil moisture
+        </small>
+        <strong>42%</strong>
+        <span class="terralux-trend"></span>
+      </div>
+
+      <div>
+        <small>
+          <svg viewBox="0 0 24 24" width="16" height="16"
+               fill="none" stroke="currentColor" focusable="false">
+            <path d="M9 14.5V5a3 3 0 0 1 6 0v9.5a5 5 0 1 1-6 0Z"/>
+            <path d="M12 8v8"/>
+            <circle cx="12" cy="17.5" r="1" fill="currentColor"/>
+          </svg>
+          Temperature
+        </small>
+        <strong>28°C</strong>
+        <span class="terralux-trend"></span>
+      </div>
+
+      <div>
+        <small>
+          <svg viewBox="0 0 24 24" width="16" height="16"
+               fill="none" stroke="currentColor" focusable="false">
+            <path d="M12 2C9 7 5 11 5 15a7 7 0 0 0 14 0c0-4-4-8-7-13Z"/>
+          </svg>
+          Humidity
+        </small>
+        <strong>70%</strong>
+        <span class="terralux-trend"></span>
+      </div>
+    </div>
+
+    <svg class="terralux-leaves" viewBox="0 0 80 104" width="48" height="62"
+         aria-hidden="true" focusable="false">
+      <path d="M61 105C57 75 60 52 68 24"
+            fill="none" stroke="#596b35" stroke-width="2.5"/>
+      <path d="M61 60C38 58 29 41 29 24C48 27 60 39 61 60Z" fill="#879456"/>
+      <path d="M64 48C66 26 77 16 84 14C86 33 77 44 64 48Z" fill="#6e8144"/>
+      <path d="M59 85C39 86 23 76 9 86C16 65 43 64 59 85Z" fill="#798c4f"/>
+      <path d="M59 97C65 82 73 74 84 71C82 87 73 96 59 97Z" fill="#899958"/>
+    </svg>
+  </div>
+
+  <div class="project-body">
+    <div class="eyebrow project-label">INTERNET OF THINGS</div>
+
+    <div class="project-meta">
+      <h3>TerraLux</h3>
+    </div>
+
+    <p>
+      A smart plant monitoring system with live sensor readings, mobile alerts,
+      automated watering and manual pump control.
+    </p>
+
+    <div class="tags">
+      <span>ESP8266</span>
+      <span>C++</span>
+      <span>Blynk IoT</span>
+      <span>Arduino</span>
+    </div>
+
+    <div class="card-actions">
+      <a class="live" href="https://youtu.be/BI-DDqB1HSY"
+   target="_blank" rel="noopener">
+  Watch project video ↗
+</a>
+      <button class="btn detail-button" type="button" data-dialog="project-3"
+              aria-label="Open case file for TerraLux">
+        Open case file →
+      </button>
+    </div>
+  </div>
+
+<dialog id="project-3" class="sms-case terralux-case" aria-labelledby="title-3">
+  <div class="sms-case-top">
+    <span class="sms-case-tab">CASE FILE / 04</span>
+
+    <form method="dialog">
+      <button class="btn close sms-case-close" type="submit"
+              aria-label="Close TerraLux case file" autofocus>
+        ×
+      </button>
+    </form>
+  </div>
+
+  <div class="sms-case-heading">
+    <h3 id="title-3">A Little <em>Greener</em></h3>
+    <span class="sms-case-label">TerraLux · Smart Plant Monitoring</span>
+  </div>
+
+  <div class="sms-case-grid">
+    <ol class="sms-case-steps" role="list">
+      <li>
+        <span class="sms-case-number" aria-hidden="true">01</span>
+        <div>
+          <h4>Read the sensors</h4>
+          <p>An ESP8266 reads soil moisture, temperature and humidity.</p>
+        </div>
+      </li>
+
+      <li>
+        <span class="sms-case-number" aria-hidden="true">02</span>
+        <div>
+          <h4>Check the readings</h4>
+          <p>Readings appear on the LCD and in Blynk, where users can receive alerts.</p>
+        </div>
+      </li>
+
+      <li>
+        <span class="sms-case-number" aria-hidden="true">03</span>
+        <div>
+          <h4>Water when needed</h4>
+          <p>The pump waters automatically, and users can also control it manually in Blynk.</p>
+        </div>
+      </li>
+    </ol>
+
+    <figure class="terra-preview">
+      <div class="terra-dashboard">
+        <div class="terra-dashboard-header">
+          <strong>TerraLux</strong>
+          <span>Sample readings</span>
+        </div>
+
+        <div class="terra-dashboard-body">
+          <svg class="terra-plant" viewBox="0 0 110 140" width="110" height="140"
+               aria-hidden="true" focusable="false">
+            <ellipse cx="53" cy="128" rx="40" ry="7" fill="#ddd8bf"/>
+
+            <path d="M54 102Q49 72 57 38" fill="none"
+                  stroke="#58683b" stroke-width="3"/>
+            <path d="M56 61Q43 39 75 18Q78 47 56 61Z" fill="#879a58"/>
+            <path d="M52 79Q24 74 22 48Q46 50 52 79Z" fill="#a0ae6c"/>
+            <path d="M53 92Q19 87 12 65Q39 63 53 92Z" fill="#77894e"/>
+            <path d="M54 88Q59 59 91 55Q83 81 54 88Z" fill="#8c9e5f"/>
+
+            <path d="M27 102H77L70 125Q52 132 34 125Z" fill="#cb906a"/>
+            <rect x="25" y="96" width="54" height="10" rx="4" fill="#e5b28c"/>
+
+            <g class="terra-rain" fill="none" aria-hidden="true">
+              <path d="M25 13l-3 8 M49 7l-3 8 M76 12l-3 8"/>
+              <path d="M36 5l-3 8 M63 16l-3 8 M91 7l-3 8"/>
+              <path d="M17 21l-3 8 M55 12l-3 8 M83 20l-3 8"/>
+            </g>
+          </svg>
+
+          <div class="terra-controls">
+            <dl class="terra-readings">
+              <div>
+                <dt>Soil moisture</dt>
+                <dd data-terra-moisture>42%</dd>
+              </div>
+
+              <div>
+                <dt>Temperature</dt>
+                <dd>28°C</dd>
+              </div>
+
+              <div>
+                <dt>Humidity</dt>
+                <dd>70%</dd>
+              </div>
+            </dl>
+
+            <button class="terra-water" type="button">Water now</button>
+            <p class="terra-status" role="status"></p>
+          </div>
+        </div>
+      </div>
+
+      <figcaption>Illustrative watering demo</figcaption>
+    </figure>
+  </div>
+</dialog>
+</article>
+
+    <!-- 05 / SHOPEE SENTIMENT ANALYSIS -->
+    <article class="project" data-category="ai data">
+<div class="case-visual sentiment shopee-snapshot">
+  <span class="case-caption">CASE 05 / TEXT ANALYTICS</span>
+
+  <div class="shopee-snapshot-panel">
+    <div class="shopee-snapshot-copy">
+      <div class="review-tally">
+        <strong>2,399</strong>
+        <span>CLEANED APP REVIEWS</span>
+      </div>
+
+      <div class="case-labels">
+        <span>Positive</span>
+        <span>Neutral</span>
+        <span>Negative</span>
+      </div>
+    </div>
+
+    <div class="shopee-snapshot-chart" aria-hidden="true">
+      <div class="shopee-chart-bars">
+        <span style="--bar-height: 30%"></span>
+        <span style="--bar-height: 55%"></span>
+        <span style="--bar-height: 30%"></span>
+        <span style="--bar-height: 53%"></span>
+        <span style="--bar-height: 79%"></span>
+        <span style="--bar-height: 100%"></span>
+      </div>
+
+      <svg class="shopee-chart-wave" viewBox="0 0 240 36"
+           width="240" height="36" preserveAspectRatio="none" focusable="false">
+        <path d="M0 35C18 35 25 21 43 23S65 34 82 28
+                 S105 13 124 16S143 24 161 17
+                 S183 4 202 6S223 24 240 17V36H0Z"
+              fill="#c78f98" fill-opacity=".28"/>
+        <path d="M0 35C18 35 25 21 43 23S65 34 82 28
+                 S105 13 124 16S143 24 161 17
+                 S183 4 202 6S223 24 240 17"
+              fill="none" stroke="#b67c88" stroke-opacity=".58" stroke-width="2"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+      <div class="project-body">
+        <div class="eyebrow project-label">MACHINE LEARNING · TEXT ANALYTICS</div>
+
+        <div class="project-meta">
+          <h3>Shopee Sentiment Analysis</h3>
+        </div>
+
+        <p>
+          Analysed 2,399 cleaned app reviews across three sentiment classes and
+          compared four models using stratified 10-fold cross-validation.
+        </p>
+
+        <div class="tags">
+          <span>Python</span>
+          <span>Altair AI Studio</span>
+          <span>SMOTE</span>
+          <span>Text Analytics</span>
+        </div>
+
+        <div class="card-actions">
+          <button class="btn detail-button" type="button" data-dialog="project-4"
+                  aria-label="Open case file for Shopee Sentiment Analysis">
+            Open case file →
+          </button>
+        </div>
+      </div>
+
+<dialog id="project-4" class="review-case" aria-labelledby="title-4">
+  <div class="review-case-top">
+    <span class="review-case-tab">CASE FILE / 05</span>
+
+    <form method="dialog">
+      <button class="btn close review-case-close" type="submit"
+              aria-label="Close case file" autofocus>×</button>
+    </form>
+  </div>
+
+  <div class="review-case-heading">
+    <h3 id="title-4">Between the <em>Reviews</em></h3>
+    <span class="review-case-label">Shopee Sentiment Analysis</span>
+  </div>
+
+  <div class="review-case-grid">
+    <ol class="review-case-steps" role="list">
+      <li>
+        <span class="review-case-number" aria-hidden="true">01</span>
+        <div>
+          <h4>Prepare the reviews</h4>
+          <p>Cleaned 2,399 app reviews for text analysis.</p>
+        </div>
+      </li>
+
+      <li>
+        <span class="review-case-number" aria-hidden="true">02</span>
+        <div>
+          <h4>Compare four models</h4>
+          <p>
+            Evaluated Naive Bayes, SVM, Decision Tree and Random Forest
+            using stratified 10-fold cross-validation.
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <span class="review-case-number" aria-hidden="true">03</span>
+        <div>
+          <h4>Classify sentiment</h4>
+          <p>Grouped reviews into positive, neutral and negative sentiment.</p>
+        </div>
+      </li>
+    </ol>
+
+<figure class="review-case-preview">
+  <div class="review-card-stack">
+    <div class="review-card" aria-live="polite" aria-atomic="true">
+      <span class="review-card-icon" aria-hidden="true">···</span>
+
+      <blockquote class="review-quote">
+        <mark>Easy to use</mark> and quick to navigate.
+      </blockquote>
+
+      <span class="review-result">Positive</span>
+    </div>
+  </div>
+
+  <figcaption>Illustrative example</figcaption>
+
+  <div class="review-options" role="group" aria-label="Choose a sample sentiment">
+    <button type="button" data-review-sentiment="positive" aria-pressed="true">
+      Positive
+    </button>
+
+    <button type="button" data-review-sentiment="neutral" aria-pressed="false">
+      Neutral
+    </button>
+
+    <button type="button" data-review-sentiment="negative" aria-pressed="false">
+      Negative
+    </button>
+  </div>
+</figure>
+  </div>
+</dialog>
+    </article>
+<article class="project" data-category="web">
+  <div class="case-visual camprush-visual" aria-hidden="true">
+    <span class="case-caption">CASE 06 / CAMPUS EVENTS</span>
+
+    <div class="camprush-preview">
+      <div class="camprush-date">
+        <svg viewBox="0 0 24 24" fill="none">
+          <rect x="3" y="5" width="18" height="16" rx="3" />
+          <path d="M7 3v4m10-4v4M3 10h18m-13 5 2 2 5-5" />
+        </svg>
+        <span>Campus<br>calendar</span>
+      </div>
+
+      <div class="camprush-feed">
+        <span class="camprush-kicker">FOR YOU · SAMPLE EVENTS</span>
+        <strong>Find your next campus event</strong>
+
+        <div class="camprush-event">
+          <span>Design Workshop</span>
+          <span>RSVP →</span>
+        </div>
+
+        <div class="camprush-event">
+          <span>Career Talk</span>
+          <span>Save →</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-body">
+    <div class="eyebrow project-label">COURSEWORK · PROJECT PLAN</div>
+
+    <div class="project-meta">
+      <h3>CampRush</h3>
+    </div>
+
+    <p>
+      A proposed platform that brings campus events and opportunities
+      into one place so students can discover events, RSVP and plan
+      their schedules.
+    </p>
+
+    <div class="tags">
+      <span>Project Planning</span>
+      <span>Requirements</span>
+      <span>Event Recommendations</span>
+    </div>
+
+    <div class="card-actions">
+      <button class="btn detail-button" type="button"
+              data-dialog="project-camprush"
+              aria-label="Open case file for CampRush">
+        Open case file →
+      </button>
+    </div>
+  </div>
+
+<dialog id="project-camprush" class="camprush-case rush-v2"
+        aria-labelledby="camprush-title">
+  <header class="rush-header">
+    <span>CASE FILE / 06 · ISP640</span>
+    <form method="dialog">
+      <button type="submit" aria-label="Close CampRush case file" autofocus>
+        ×
+      </button>
+    </form>
+  </header>
+
+  <div class="rush-body">
+    <div class="rush-overview">
+      <div>
+        <p class="rush-label">CAMPRUSH · PROJECT PROPOSAL</p>
+        <h3 id="camprush-title">What’s on <em>campus?</em></h3>
+        <p class="rush-lead">
+          Find campus events, <em>RSVP</em> and plan your schedule in one place.
+        </p>
+      </div>
+
+      <aside class="rush-pass" aria-labelledby="rush-pass-title">
+        <div class="rush-pass-top">
+          <svg viewBox="0 0 24 24" width="32" height="32"
+               fill="none" stroke="currentColor" stroke-width="1.5"
+               stroke-linecap="round" stroke-linejoin="round"
+               aria-hidden="true">
+            <rect x="3" y="5" width="18" height="16" rx="2" />
+            <path d="M7 3v4m10-4v4M3 10h18M7 14h1m3 0h1m3 0h1M7 17h1m3 0h1m3 0h1" />
+          </svg>
+          <h4 id="rush-pass-title" class="rush-label">PROJECT AT A GLANCE</h4>
+        </div>
+
+        <dl class="rush-pass-stats">
+          <div>
+            <dt>Planned timeline</dt>
+            <dd>12 weeks</dd>
+          </div>
+          <div>
+            <dt>Estimated budget</dt>
+            <dd>RM36,000</dd>
+          </div>
+        </dl>
+      </aside>
+    </div>
+
+    <section aria-labelledby="rush-experience">
+      <h4 id="rush-experience" class="rush-label rush-divider">
+        THE STUDENT EXPERIENCE
+      </h4>
+      <ol class="rush-feature-list" role="list">
+        <li>
+          <span aria-hidden="true">01</span>
+          <h5>Discover</h5>
+          <p>Browse and filter upcoming workshops, seminars and competitions.</p>
+        </li>
+        <li>
+          <span aria-hidden="true">02</span>
+          <h5>Plan</h5>
+          <p>RSVP, save events to your calendar and get reminders.</p>
+        </li>
+        <li>
+          <span aria-hidden="true">03</span>
+          <h5>Get suggestions</h5>
+          <p>Find events that match your interests and past activity.</p>
+        </li>
+      </ol>
+    </section>
+  </div>
+</dialog>
+</article>
+<article class="project" data-category="ai data">
+  <div class="case-visual voucher-visual" aria-hidden="true">
+    <span class="case-caption">CASE 07 / VOUCHER OPTIMIZATION</span>
+
+    <div class="voucher-preview">
+      <div class="voucher-receipt">
+        <span>CHECKOUT RULES</span>
+        <strong>Shopping receipt</strong>
+        <span>Budget limit</span>
+        <span>Minimum spend</span>
+        <span>Voucher compatibility</span>
+      </div>
+
+      <div class="voucher-ticket">
+        <span>GENETIC ALGORITHM</span>
+        <strong>Find a better deal.</strong>
+        <span>Compare voucher combinations</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-body">
+    <div class="eyebrow project-label">COURSEWORK · OPTIMIZATION</div>
+
+    <div class="project-meta">
+      <h3>Voucher Optimizer</h3>
+    </div>
+
+    <p>
+      A Python project that uses a genetic algorithm to find voucher
+      combinations that reduce checkout costs while accounting for
+      minimum spend, budget and voucher compatibility.
+    </p>
+
+    <div class="tags">
+      <span>Python</span>
+      <span>Genetic Algorithm</span>
+      <span>Optimization</span>
+    </div>
+
+    <div class="card-actions">
+      <button class="btn detail-button" type="button"
+              data-dialog="project-vouchers"
+              aria-label="Open case file for Voucher Optimizer">
+        Open case file →
+      </button>
+    </div>
+  </div>
+
+  <dialog id="project-vouchers" class="camprush-case rush-v2"
+          aria-labelledby="voucher-title">
+    <header class="rush-header">
+      <span>CASE FILE / 07 · OPTIMIZATION</span>
+      <form method="dialog">
+        <button type="submit" aria-label="Close Voucher Optimizer case file"
+                autofocus>×</button>
+      </form>
+    </header>
+
+    <div class="rush-body">
+      <div class="rush-overview">
+        <div>
+          <p class="rush-label">VOUCHER OPTIMIZER · COURSEWORK</p>
+          <h3 id="voucher-title">Which vouchers <em>work together?</em></h3>
+          <p class="rush-lead">
+            At checkout, a discount may require a minimum spend or
+            exclude another voucher. This project explores which
+            combinations can lower the final cost under those rules.
+          </p>
+        </div>
+
+        <aside class="rush-pass" aria-label="Experiment at a glance">
+          <div class="rush-pass-top">
+            <h4 class="rush-label">EXPERIMENT AT A GLANCE</h4>
+          </div>
+          <dl class="rush-pass-stats">
+            <div>
+              <dt>Configurations tested</dt>
+              <dd>4</dd>
+            </div>
+            <div>
+              <dt>Best-performing run</dt>
+              <dd>Test 1</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+
+      <section aria-labelledby="voucher-method">
+        <h4 id="voucher-method" class="rush-label rush-divider">
+          HOW THE ALGORITHM SEARCHES
+        </h4>
+
+        <ol class="rush-feature-list" role="list">
+          <li>
+            <span aria-hidden="true">01</span>
+            <h5>Encode</h5>
+            <p>Represent each voucher as 1 when selected and 0 when skipped.</p>
+          </li>
+          <li>
+            <span aria-hidden="true">02</span>
+            <h5>Score</h5>
+            <p>Evaluate savings and checkout cost, with penalties for rule violations.</p>
+          </li>
+          <li>
+            <span aria-hidden="true">03</span>
+            <h5>Evolve</h5>
+            <p>Use selection, crossover and mutation to explore new combinations.</p>
+          </li>
+        </ol>
+      </section>
+    </div>
+  </dialog>
+</article>
+<article class="project" data-category="ai data">
+  <div class="case-visual campus-bus-visual" aria-hidden="true">
+    <span class="case-caption">CASE 08 / ROUTE OPTIMIZATION</span>
+
+    <div class="campus-bus-preview">
+      <svg class="campus-bus-map" viewBox="0 0 600 180"
+           preserveAspectRatio="xMidYMid slice" focusable="false">
+        <rect width="600" height="180" fill="#e1ebe4" />
+
+        <path d="M0 52 180 76 275 38 600 75
+                 M40 180 150 0
+                 M240 180 360 0
+                 M465 180 515 0
+                 M0 132 205 110 375 145 600 105"
+              fill="none" stroke="#f9f7eb" stroke-width="10" />
+
+        <path d="M78 122C150 122 151 69 229 69
+                 S310 132 380 118
+                 S453 65 520 66"
+              fill="none" stroke="#35665d" stroke-width="4"
+              stroke-dasharray="8 8" stroke-linecap="round" />
+
+        <g fill="#35665d" stroke="#fff8ea" stroke-width="4">
+          <circle cx="78" cy="122" r="9" />
+          <circle cx="229" cy="69" r="9" />
+          <circle cx="380" cy="118" r="9" />
+          <circle cx="520" cy="66" r="9" />
+        </g>
+      </svg>
+
+      <span class="campus-bus-icon">
+        <svg viewBox="0 0 24 24" width="24" height="24"
+             fill="none" stroke="currentColor" stroke-width="1.6"
+             stroke-linecap="round" stroke-linejoin="round"
+             focusable="false">
+          <rect x="4" y="3" width="16" height="16" rx="3" />
+          <path d="M4 11h16M7 19v2m10-2v2M8 15h1m6 0h1" />
+        </svg>
+      </span>
+
+      <span class="campus-bus-distance">
+        <strong>13.70 km</strong> best found
+      </span>
+    </div>
+  </div>
+
+  <div class="project-body">
+    <div class="eyebrow project-label">COURSEWORK · SWARM INTELLIGENCE</div>
+
+    <div class="project-meta">
+      <h3>Campus Bus Route Optimization</h3>
+    </div>
+
+    <p>
+      A Python project that uses Ant Colony Optimization to search
+      for shorter shuttle bus routes at UiTM Shah Alam.
+    </p>
+
+    <div class="tags">
+      <span>Python</span>
+      <span>Ant Colony Optimization</span>
+      <span>Route Planning</span>
+    </div>
+
+    <div class="card-actions">
+      <button class="btn detail-button" type="button"
+              data-dialog="project-campus-bus"
+              aria-label="Open case file for Campus Bus Route Optimization">
+        Open case file →
+      </button>
+    </div>
+  </div>
+
+  <dialog id="project-campus-bus" class="campus-bus-case"
+          aria-labelledby="campus-bus-title">
+    <header class="campus-bus-header">
+      <span>CASE FILE / 08 · ROUTE OPTIMIZATION</span>
+
+      <form method="dialog">
+        <button type="submit" aria-label="Close campus bus case file"
+                autofocus>×</button>
+      </form>
+    </header>
+
+    <div class="campus-bus-body">
+      <div class="campus-bus-overview">
+        <div>
+          <p class="campus-bus-label">UITM SHAH ALAM · COURSEWORK</p>
+          <h3 id="campus-bus-title">A shorter route <em>around campus.</em></h3>
+
+          <p>
+            The project uses Ant Colony Optimization to compare different
+            orders for visiting campus shuttle stops. Three experiments
+            tested how changes to the algorithm settings affected the
+            shortest route found.
+          </p>
+        </div>
+
+        <aside class="campus-bus-pass" aria-labelledby="campus-bus-results">
+          <h4 id="campus-bus-results" class="campus-bus-label">
+            EXPERIMENT AT A GLANCE
+          </h4>
+
+          <dl>
+            <div>
+              <dt>Shortest route found</dt>
+              <dd>13.70 km</dd>
+            </div>
+            <div>
+              <dt>Selected configuration</dt>
+              <dd>Experiment 2</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+
+      <section aria-labelledby="campus-bus-method">
+        <h4 id="campus-bus-method" class="campus-bus-label campus-bus-divider">
+          HOW THE ROUTE SEARCH WORKS
+        </h4>
+
+        <ol class="campus-bus-steps" role="list">
+          <li>
+            <span aria-hidden="true">01</span>
+            <h5>Build routes</h5>
+            <p>Simulated ants visit the shuttle stops in different orders.</p>
+          </li>
+
+          <li>
+            <span aria-hidden="true">02</span>
+            <h5>Reinforce shorter routes</h5>
+            <p>
+              Pheromone updates guide later iterations toward connections
+              found in shorter routes.
+            </p>
+          </li>
+
+          <li>
+            <span aria-hidden="true">03</span>
+            <h5>Compare experiments</h5>
+            <p>
+              Experiment 1 found a 14.11 km route. Experiment 2 reduced it
+              to 13.70 km, and Experiment 3 matched that distance.
+            </p>
+          </li>
+        </ol>
+      </section>
+    </div>
+  </dialog>
+</article>
+    <!-- Tambah projek keenam dan seterusnya di sini. -->
+  </div>
+
+  <div class="files-more" hidden>
+    <button type="button" aria-controls="project-grid" aria-expanded="false">
+      Show more projects <span aria-hidden="true">↓</span>
+    </button>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section experience-rose" aria-labelledby="experience-title">
+  <div class="exp-intro">
+    <p class="exp-label">05 / EXPERIENCE</p>
+
+    <h2 id="experience-title">
+      Learning through<br>
+      <em>practice.</em>
+    </h2>
+
+    <p class="exp-summary">
+      From campus leadership to building software in the workplace.
+    </p>
+
+    <div class="exp-note" aria-hidden="true">
+      <svg viewBox="0 0 100 62" fill="none" stroke="currentColor"
+           stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M50 27C34 8 12 8 12 22C12 34 35 35 50 27Z"/>
+        <path d="M50 27C65 7 87 7 88 20C89 32 66 35 50 27Z"/>
+        <path d="M50 27C45 41 39 50 30 57M50 27C54 42 63 50 70 56"/>
+      </svg>
+    </div>
+  </div>
+
+  <ol class="exp-timeline" role="list">
+    <li class="exp-item">
+      <p class="exp-meta">
+        Diploma Leadership · <time datetime="2022-11">Nov 2022</time> –
+        <time datetime="2023-02">Feb 2023</time>
+      </p>
+      <h3>Exco Iqtisod</h3>
+      <p class="exp-organisation">Kelab IMAN · UiTM Machang</p>
+      <p class="exp-description">
+        Served on Kelab IMAN’s entrepreneurship committee while pursuing
+        my Diploma in Computer Science.
+      </p>
+    </li>
+
+    <li class="exp-item">
+      <p class="exp-meta">
+        Industry Experience · <time datetime="2024-09">Sep 2024</time> –
+        <time datetime="2025-02">Feb 2025</time>
+      </p>
+      <h3>IT Intern</h3>
+      <p class="exp-organisation">Pejabat Tanah dan Jajahan Pasir Mas</p>
+      <p class="exp-description">
+        Developed an employee lateness and emergency leave management system
+        using PHP and MySQL, with a front end built using HTML, CSS,
+        JavaScript and Bootstrap. Tested the system, fixed bugs and refined
+        features based on supervisor feedback. I also maintained staff and
+        asset records and prepared departmental reports.
+      </p>
+    </li>
+
+    <li class="exp-item">
+      <p class="exp-meta">
+        Degree Leadership · <time datetime="2025-10">Oct 2025</time> – Present
+      </p>
+      <h3>Head of Entrepreneurship and Networking Exco</h3>
+      <p class="exp-organisation">COSMIC Club · UiTM Kedah</p>
+      <p class="exp-description">
+        Helped organise club programmes, coordinated committee tasks and
+        managed corporate shirt promotions and orders. Led booth preparations,
+        sales and activities across two Club Fest semesters, helping COSMIC
+        earn second place for Best Booth.
+      </p>
+    </li>
+  </ol>
+</section><!-- ACTIVITIES -->
+<section
+  id="activities"
+  class="section campus-journal"
+  aria-labelledby="campus-journal-title"
+>
+  <div class="journal-heading">
+    <p class="journal-eyebrow">06 / ACTIVITIES</p>
+
+    <h2 id="campus-journal-title">
+      Beyond the <em>classroom.</em>
+    </h2>
+
+    <p class="journal-intro">
+      From guiding young makers to pitching a prototype,
+      here’s what I did beyond class.
+    </p>
+  </div>
+
+  <div class="journal-grid" id="activities-grid">
+
+    <!-- 1. Hackathon -->
+    <article class="journal-card journal-card--hackathon">
+      <div class="journal-photo">
+        <img
+          src="images/kidtrace-hackathon.png"
+          alt="Township of Tomorrow banner for the Sime Darby Property Universities Hackathon"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="journal-card-body">
+        <div class="journal-meta">
+          <span>Competition</span>
+          <time datetime="2026-10">October 2026</time>
+        </div>
+
+        <h3>
+          Sime Darby Property Universities Hackathon 2026 — KidTrace AI
+        </h3>
+
+        <p class="journal-role">Hackathon Participant</p>
+        <p class="journal-location">
+          UiTM Open Innovation Challenge · Team Project
+        </p>
+
+        <p class="journal-description">
+          Collaborated with teammates to develop and pitch KidTrace AI,
+          a web-based prototype designed to help mall security respond
+          to reports of missing children. The prototype helps staff
+          decide which CCTV clips to review first, verify sightings and
+          build a movement timeline to guide the search. Through the
+          hackathon, we turned a real campus challenge brief into a
+          working prototype and presented how it could support mall
+          security teams.
+        </p>
+
+        <div class="journal-card-links">
+          <a
+            class="journal-link"
+            href="https://kidtrace-ai.onrender.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Explore KidTrace AI <span aria-hidden="true">↗</span>
+          </a>
+
+          <a
+            class="journal-instagram"
+            href="https://www.instagram.com/cosmicuitmkedah/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Explore the highlights <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 2. Kedah Digital Festival -->
+    <article class="journal-card journal-card--kdf">
+      <div class="journal-photo">
+        <img
+          src="images/kdf-festival.jpg"
+          alt="Kedah Digital Festival 2026 at UiTM Kedah"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="journal-card-body">
+        <div class="journal-meta">
+          <span>Competition Support</span>
+          <time datetime="2026-09-30">30 September 2026</time>
+        </div>
+
+        <h3>Kedah Digital Festival 2026</h3>
+
+        <p class="journal-role">
+          Timekeeper · Engineering Design Primary
+        </p>
+        <p class="journal-location">UiTM Kedah · SULAM</p>
+
+        <p class="journal-description">
+          Supported Kedah Digital Festival 2026 at UiTM Kedah, involving
+          Penang Science Cluster (PSC) and the Kedah State Education
+          Department. Served as a timekeeper for both rounds of the
+          Engineering Design Primary competition and helped judges keep
+          presentations on schedule. Also answered teachers’ questions,
+          distributed food and assisted the organising team throughout
+          the day. The experience strengthened my communication,
+          teamwork and ability to respond to different needs.
+        </p>
+
+        <div class="journal-card-links">
+          <a
+            class="journal-instagram"
+            href="https://www.instagram.com/cosmicuitmkedah/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Explore the highlights <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 3. MakerTech -->
+    <article class="journal-card journal-card--makertech">
+      <div class="journal-photo">
+        <img
+          src="images/makertech.jpg"
+          alt="MakerTech workshop facilitators posing together"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="journal-card-body">
+        <div class="journal-meta">
+          <span>Community · SULAM</span>
+          <time datetime="2026-07-28">28 July 2026</time>
+        </div>
+
+        <h3>MakerTech Workshop</h3>
+
+        <p class="journal-role">Workshop Facilitator</p>
+        <p class="journal-location">
+          Kedah Digital Festival · Dewan Al Farabi
+        </p>
+
+        <p class="journal-description">
+          Collaborated with Penang Science Cluster (PSC) facilitators
+          during the MakerTech Workshop at Kedah Digital Festival.
+          Guided students through hands-on activities using REKA IoT
+          blocks, helped troubleshoot their projects and supported them
+          in preparing their pitches. The experience strengthened my
+          communication and problem-solving skills while giving me the
+          opportunity to share technical knowledge with young learners.
+        </p>
+
+        <div class="journal-card-links">
+          <a
+            class="journal-instagram"
+            href="https://www.instagram.com/cosmicuitmkedah/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Explore the highlights <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </article>
+<!-- Lumière: The Final Sparkle -->
+<article class="journal-card journal-card--lumiere">
+  <div class="journal-photo">
+    <img
+      src="images/lumiere-banner.png"
+      alt="Lumière: The Final Sparkle — Melayu Klasik dinner"
+      loading="lazy"
+    >
+  </div>
+
+  <div class="journal-card-body">
+    <div class="journal-meta">
+      <span>Event Organisation · Web Development</span>
+      <time datetime="2026-11-16">16 November 2026</time>
+    </div>
+
+    <h3>Lumière: The Final Sparkle</h3>
+
+    <p class="journal-role">
+      Registration Committee Member · Voting App Developer
+    </p>
+
+    <p class="journal-location">
+      COSMIC · CDCS259 · UiTM Kedah
+    </p>
+
+    <p class="journal-description">
+      Supporting Lumière: The Final Sparkle, a Melayu Klasik-themed
+      dinner bringing CDCS259 students and lecturers together to
+      celebrate shared memories and their university journey.
+      As part of the Registration Committee, I help organise
+      registration responses, prepare participant and lecturer
+      attendance lists, and arrange records for guest check-in.
+      My responsibilities also include recording attendance and
+      submitting the final records after the programme. Alongside
+      these preparations, I developed a live voting web app for
+      the event’s award selections, giving participants a way
+      to cast their votes through their phones.
+    </p>
+
+    <div class="journal-card-links">
+      <a
+        class="journal-link"
+        href="https://lumiere-vote-sofea.furryteal1.chatgpt.site"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Explore the voting app
+        <span aria-hidden="true">↗</span>
+      </a>
+
+      <a
+        class="journal-instagram"
+        href="https://www.instagram.com/cosmicuitmkedah/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Explore the highlights
+        <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </div>
+</article>
+    <!-- 4. Club Fest 2026 -->
+    <article class="journal-card journal-card--featured">
+      <div class="journal-photo clubfest-poster">
+        <img
+          src="images/clubfest 2026.png"
+          alt="Clubfest 2026 — Facades of Camaraderie"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="journal-card-body">
+        <div class="journal-meta">
+          <span>Team achievement</span>
+          <time datetime="2026-10">October 2026</time>
+        </div>
+
+        <h3>COSMIC Club Fest 2026</h3>
+
+        <p class="journal-role">
+          Club Fest Executive Committee Member
+        </p>
+        <p class="journal-location">
+          COSMIC · Dewan Perdana, UiTM Kedah
+        </p>
+
+        <p class="journal-description">
+          As part of the Club Fest executive committee, I led the
+          coordination of COSMIC’s booth. Our committee and the rest
+          of our batch worked together on booth preparation, sales
+          and AI-themed mini-games, including AI Impostor and
+          Semantris. Visitors could enjoy the games while getting to
+          know our club and meeting its members. Preparing for the
+          event involved coordinating different tasks and supporting
+          one another throughout the programme. Our shared effort
+          earned COSMIC second place overall and gave me valuable
+          experience in team coordination, communication and event
+          organisation.
+        </p>
+
+        <div class="journal-card-links">
+          <a
+            class="journal-instagram"
+            href="https://www.instagram.com/cosmicuitmkedah/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Explore the highlights <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 5. SAF -->
+    <article class="journal-card journal-card--saf">
+      <div class="journal-photo">
+        <img
+          src="images/saf.jpg"
+          alt="FSKM students participating in Sukan Antara Fakulti"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="journal-card-body">
+        <div class="journal-meta">
+          <span>Sports · Faculty Representation</span>
+        </div>
+
+        <h3>Sukan Antara Fakulti (SAF)</h3>
+
+        <p class="journal-role">
+          Parade &amp; Marathon Participant
+        </p>
+        <p class="journal-location">
+          Faculty of Computer and Mathematical Sciences · UiTM Kedah
+        </p>
+
+        <p class="journal-description">
+          Represented the Faculty of Computer and Mathematical Sciences
+          (FSKM) in the parade and marathon events at Sukan Antara
+          Fakulti (SAF). Worked alongside fellow students to coordinate
+          our parade formation and joined the marathon to contribute
+          to the faculty’s participation. FSKM secured first place in
+          the marathon event and third place overall at SAF. Taking
+          part in both activities strengthened my teamwork, discipline
+          and perseverance while creating a sense of pride in
+          representing our faculty.
+        </p>
+
+        <div class="journal-card-links">
+          <a
+            class="journal-instagram"
+            href="https://www.instagram.com/cosmicuitmkedah/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Explore the highlights <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 6. Final Boost 2.0 -->
+    <article class="journal-card journal-card--boost2">
+      <div class="journal-photo">
+        <img
+          src="images/final- boost 2.0.jpeg"
+          alt="Poster for CS/CDCS259 Final Boost 2.0"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="journal-card-body">
+        <div class="journal-meta">
+          <span>Academic Programme</span>
+          <time datetime="2026-07-03">3 July 2026</time>
+        </div>
+
+        <h3>CS/CDCS259 Final Boost 2.0</h3>
+
+        <p class="journal-role">
+          Special Duties Committee Member
+        </p>
+        <p class="journal-location">
+          COSMIC · Online via Google Meet
+        </p>
+
+        <p class="journal-description">
+          Supported Final Boost 2.0, an online revision programme
+          organised by COSMIC for semester 3 CS259 and semester 5
+          CDCS259 students. The sessions helped students prepare
+          for their final examinations in ISP500, ICT501 and ISP611.
+          As part of the Special Duties Committee, I supported
+          attendance and feedback collection through Google Forms
+          and QR codes, alongside student E-Merit arrangements.
+        </p>
+
+        <div class="journal-card-links">
+          <a
+            class="journal-instagram"
+            href="https://www.instagram.com/cosmicuitmkedah/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Explore the highlights <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 7. School Attack -->
+    <article class="journal-card journal-card--schoolattack">
+      <div class="journal-photo">
+        <img
+          src="images/school-attack.jpg"
+          alt="School Attack technology and innovation programme at SMK Merbok"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="journal-card-body">
+        <div class="journal-meta">
+          <span>Community · Outreach</span>
+          <span class="journal-date">15–16 April 2026</span>
+        </div>
+
+        <h3>
+          School Attack: Digital Technology &amp; Innovation Carnival
+        </h3>
+
+        <p class="journal-role">
+          Programme &amp; Activities Committee Member · Form 5 Facilitator
+        </p>
+        <p class="journal-location">SMK Merbok · UiTM Kedah</p>
+
+        <p class="journal-description">
+          Supported School Attack, a two-day technology and internet
+          safety programme at SMK Merbok involving UiTM Kedah, the
+          Kedah State Education Department and MCMC Kedah. The
+          programme introduced Form 3–5 students to web development,
+          programming, cybersecurity and artificial intelligence
+          through practical and interactive activities. As part of
+          the Programme and Activities Committee, I helped coordinate
+          activities and participant movement. I also served as a
+          Form 5 facilitator, assisting lecturers in guiding students
+          through the sessions, answering their questions and helping
+          them complete the activities.
+        </p>
+
+        <div class="journal-card-links">
+          <a
+            class="journal-instagram"
+            href="https://www.instagram.com/cosmicuitmkedah/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Explore the highlights <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 8. Annual General Meeting -->
+    <article class="journal-card journal-card--annualagm">
+      <div class="journal-photo">
+        <img
+          src="images/cosmic-agm-2026.png"
+          alt="COSMIC Annual General Meeting poster for 18 January 2026"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="journal-card-body">
+        <div class="journal-meta">
+          <span>Club Leadership</span>
+          <time datetime="2026-01-18">18 January 2026</time>
+        </div>
+
+        <h3>COSMIC Annual General Meeting 2026</h3>
+
+        <p class="journal-role">Registration Lead</p>
+        <p class="journal-location">
+          COSMIC · Online via Google Meet
+        </p>
+
+        <p class="journal-description">
+          Supported COSMIC’s Annual General Meeting, which brought
+          together CDCS259 students online to learn more about their
+          academic club and meet its leadership team for the 2025/2026
+          session. The programme introduced the new committee and gave
+          students an opportunity to connect with the people representing
+          them. As Registration Lead, I coordinated participant
+          registration and attendance recording, helping keep the
+          process organised throughout the programme.
+        </p>
+
+        <div class="journal-card-links">
+          <a
+            class="journal-instagram"
+            href="https://www.instagram.com/cosmicuitmkedah/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Explore the highlights <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 9. X-Run -->
+    <article class="journal-card journal-card--xrun">
+      <div class="journal-photo">
+        <img
+          src="images/xrun-2025.jpg"
+          alt="X-Run 2025: Race. Splash. Colour! at UiTM Kedah"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="journal-card-body">
+        <div class="journal-meta">
+          <span>Campus Engagement</span>
+          <time datetime="2025-11-15">15 November 2025</time>
+        </div>
+
+        <h3>X-Run 2025: Race. Splash. Colour!</h3>
+
+        <p class="journal-role">
+          Head of Special Duties Committee
+        </p>
+        <p class="journal-location">
+          COSMIC &amp; CYCOM · UiTM Kedah
+        </p>
+
+        <p class="journal-description">
+          Contributed to X-Run 2025, a campus programme bringing together
+          Explorace, Colour Run and Water Splash activities. Organised
+          by COSMIC and CYCOM, the programme encouraged students to
+          take a break from academic routines, meet new people and
+          work together through checkpoint challenges. As Head of the
+          Special Duties Committee, I coordinated the team’s assigned
+          tasks and supported preparations and on-the-day needs,
+          working with other committees to help the programme run
+          smoothly.
+        </p>
+
+        <div class="journal-card-links">
+          <a
+            class="journal-instagram"
+            href="https://www.instagram.com/cosmicuitmkedah/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Explore the highlights <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 10. Club Fest 2025 -->
+    <article class="journal-card journal-card--clubfest2025">
+      <div class="journal-photo">
+        <img
+          src="images/clubfest-2025.png"
+          alt="Club Fest 2025: Into the Universe at Dewan Perdana"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="journal-card-body">
+        <div class="journal-meta">
+          <span>Campus Engagement</span>
+          <span class="journal-date">13–15 October 2025</span>
+        </div>
+
+        <h3>Club Fest 2025: Into the Universe</h3>
+
+        <p class="journal-role">
+          Programme Executive Committee Member
+        </p>
+        <p class="journal-location">
+          COSMIC · Dewan Perdana, UiTM Kedah
+        </p>
+
+        <p class="journal-description">
+          Club Fest 2025 marked my first experience serving on a
+          programme’s executive committee. The event brought campus
+          clubs together to introduce their activities and connect
+          with students. Representing COSMIC, I supported the team’s
+          preparations and coordination, working with committee
+          members to help the programme run smoothly. It gave me an
+          early opportunity to take on responsibility beyond the
+          classroom and learn how communication, teamwork and
+          preparation contribute to a successful event.
+        </p>
+
+        <div class="journal-card-links">
+          <a
+            class="journal-instagram"
+            href="https://www.instagram.com/cosmicuitmkedah/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Explore the highlights <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 11. Extraordinary General Meeting -->
+    <article class="journal-card journal-card--agm">
+      <div class="journal-photo">
+        <img
+          src="images/AGM-1.jpeg"
+          alt="COSMIC members attending the Extraordinary General Meeting"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="journal-card-body">
+        <div class="journal-meta">
+          <span>Club Leadership</span>
+          <time datetime="2025-05-08">8 May 2025</time>
+        </div>
+
+        <h3>COSMIC Extraordinary General Meeting</h3>
+
+        <p class="journal-role">Registration Lead</p>
+        <p class="journal-location">
+          Dewan Sarjana 1 · UiTM Kedah
+        </p>
+
+        <p class="journal-description">
+          Participated in COSMIC’s Extraordinary General Meeting,
+          which brought together CDCS259 students to learn more about
+          the club and meet its leadership team for the 2024/2025
+          session. The programme introduced the new committee and
+          gave students an opportunity to connect with the people
+          representing their academic club. As Registration Lead,
+          I coordinated participant check-in and attendance recording,
+          prepared questions for the Q&amp;A session and helped ensure
+          the programme ran smoothly.
+        </p>
+
+        <div class="journal-card-links">
+          <a
+            class="journal-instagram"
+            href="https://www.instagram.com/cosmicuitmkedah/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Explore the highlights <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 12. Final Boost -->
+    <article class="journal-card journal-card--finalboost">
+      <div class="journal-photo finalboost-photo">
+        <img
+          src="images/final-boost.png"
+          alt="Students attending the CDCS259 Final Boost programme"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="journal-card-body">
+        <div class="journal-meta">
+          <span>Academic Programme</span>
+          <time datetime="2025-06-21">21 June 2025</time>
+        </div>
+
+        <h3>CDCS259 Final Boost</h3>
+
+        <p class="journal-role">
+          Registration Committee Member
+        </p>
+        <p class="journal-location">
+          Dewan Sarjana 2 · UiTM Kedah
+        </p>
+
+        <p class="journal-description">
+          Supported CDCS259 Final Boost, a revision programme organised
+          by COSMIC to help students prepare for their final examinations
+          in DSC551 and ISP542. The programme brought students together
+          for focused revision ahead of their exams. As a registration
+          committee member, I assisted with participant check-in and
+          attendance recording, helping students register smoothly
+          before the sessions.
+        </p>
+
+        <div class="journal-card-links">
+          <a
+            class="journal-instagram"
+            href="https://www.instagram.com/cosmicuitmkedah/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Explore the highlights <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+  </div><!-- /.journal-grid -->
+
+  <div class="journal-toggle-wrap">
+    <button
+      class="journal-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="activities-grid"
+      hidden
+    >
+      <span class="journal-toggle-label">
+        Show more activities
+      </span>
+      <span class="journal-toggle-icon" aria-hidden="true">↓</span>
+    </button>
+  </div>
+</section>
+
+</script>
+<!-- CONTACT -->
+<section
+  id="contact"
+  class="contact contact-scrapbook"
+  aria-labelledby="contact-title"
+>
+  <div class="section-head">
+    <div class="eyebrow">07 / CONTACT</div>
+    <h2 id="contact-title">Drop me a <em>note.</em></h2>
+  </div>
+
+  <div class="letter-grid">
+    <!-- Contact card -->
+    <article class="letter-card letter-airmail">
+      <div class="letter-stamp" aria-hidden="true">
+        <small>50¢</small>
+
+        <svg
+          viewBox="0 0 48 56"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M24 54C23 43 27 33 24 22
+               M24 47Q11 45 9 36Q20 36 24 47
+               M25 43Q36 41 40 32Q30 33 25 43"
+          />
+          <path
+            d="M24 24C16 24 10 18 9 12C17 12 22 17 24 24
+               M24 24C18 17 20 9 24 4C29 9 30 17 24 24
+               M24 24C29 16 35 12 41 13C39 20 32 25 24 24Z"
+          />
+          <path d="M24 23Q17 10 13 7M26 23Q34 9 37 7"/>
+        </svg>
+      </div>
+
+      <h3>Let’s connect</h3>
+
+      <p>
+        Have an internship opportunity, a project idea, or just want
+        to say hello? I’d love to hear from you.
+      </p>
+
+      <div class="letter-actions">
+        <a
+          class="letter-button letter-primary"
+          href="mailto:fatinsofea2805@gmail.com"
+        >
+          Email me ↗
+        </a>
+
+        <button
+          class="letter-button copy"
+          id="copy"
+          type="button"
+        >
+          Copy email
+        </button>
+      </div>
+
+      <p>
+        <a
+          class="email letter-link"
+          href="mailto:fatinsofea2805@gmail.com"
+        >
+          fatinsofea2805@gmail.com
+        </a>
+      </p>
+
+      <!-- LinkedIn and GitHub -->
+      <div class="letter-social-links">
+        <a
+          class="letter-link"
+          href="https://www.linkedin.com/in/nurfatin-sofea-022938259/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Connect on LinkedIn
+          <span aria-hidden="true">↗</span>
+        </a>
+
+        <a
+          class="letter-link"
+          href="https://github.com/fatinsofea2805-arch"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Explore my GitHub
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <details class="letter-disclosure">
+        <summary>Write a message</summary>
+
+        <form id="contact-form" class="letter-form">
+          <label>
+            Your name
+            <input
+              name="name"
+              required
+              maxlength="100"
+              autocomplete="name"
+            >
+          </label>
+
+          <label>
+            Your email
+            <input
+              name="email"
+              type="email"
+              required
+              maxlength="200"
+              autocomplete="email"
+            >
+          </label>
+
+          <label>
+            Your message
+            <textarea
+              name="message"
+              required
+              maxlength="1500"
+              rows="4"
+            ></textarea>
+          </label>
+
+          <button
+            class="letter-button letter-primary"
+            type="submit"
+          >
+            Open email draft →
+          </button>
+
+          <small>
+            Your email app will open with your message ready to send.
+          </small>
+        </form>
+      </details>
+    </article>
+
+    <!-- Visitor notes -->
+    <article
+      class="letter-card visitor-notebook"
+      aria-labelledby="visitor-title"
+    >
+      <span class="letter-paperclip" aria-hidden="true"></span>
+
+      <h3 id="visitor-title">Notes from visitors</h3>
+
+      <p>
+        Leave a little note about your visit.
+        Notes are saved in this browser.
+      </p>
+
+      <form id="visitor-note-form" class="letter-form">
+        <label>
+          Your name
+          <input
+            name="name"
+            autocomplete="name"
+            placeholder="e.g. Aisyah"
+            maxlength="40"
+            required
+          >
+        </label>
+
+        <label>
+          Your message
+          <textarea
+            name="message"
+            rows="3"
+            maxlength="300"
+            placeholder="Write your message here…"
+            required
+          ></textarea>
+        </label>
+
+        <button
+          class="letter-button letter-primary"
+          type="submit"
+        >
+          Post a note
+        </button>
+
+        <p
+          id="visitor-note-status"
+          class="letter-status"
+          role="status"
+        ></p>
+      </form>
+
+      <div class="visitor-paper">
+        <p id="visitor-empty">Be the first to leave a note.</p>
+
+        <ul
+          id="visitor-notes"
+          aria-label="Visitor notes"
+          tabindex="0"
+          hidden
+        ></ul>
+      </div>
+    </article>
+  </div>
+</section>
+    <!-- FOOTER -->
+    <footer>
+      <span>
+        © <span id="year"></span> Fatin Sofea
+      </span>
+
+      <a href="#home">Back to top ↑</a>
+    </footer>
+  </main>
+
+  <script src="portfolio.js" defer></script>
+  <script src="enhancements.js" defer></script>
+</body>
+</html>
